@@ -278,7 +278,8 @@ footer p {
 }
 
 .seccion-formulario input,
-.seccion-formulario select {
+.seccion-formulario select,
+.seccion-formulario textarea {
     padding: 10px;
 }
 
@@ -345,4 +346,15 @@ footer p {
 
 .tarjeta-integrante p {
     color: #555555;
+}
+
+#resultadoContacto {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e8f1f2;
+    border-radius: 10px;
+}
+
+#resultadoContacto:empty {
+    display: none;
 }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contactate con TravelGo para realizar consultas sobre tu próximo viaje">
+    <meta name="keywords" content="viajes, destinos, itinerarios, turismo, TravelGo">
+    <meta name="author" content="Guillermo Pernichi, Joaquín Peyronel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelGo - Contacto</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>TravelGo</h1>
+        <p>Viajá · Descubrí · Viví</p>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="itinerarios.html">Itinerarios</a>
+            <a href="cotizacion.html">Cotización</a>
+            <a href="nosotros.html">Sobre nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+
+        <section class="encabezado-pagina">
+            <h2>Contacto</h2>
+            <p>¿Tenés alguna consulta? Completá el formulario y dejanos tu mensaje.</p>
+        </section>
+
+        <section class="seccion-formulario">
+
+            <h2>Envianos tu consulta</h2>
+
+            <form id="formContacto">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo">
+                    <option value="">Seleccionar motivo</option>
+                    <option value="destinos">Consulta sobre destinos</option>
+                    <option value="itinerarios">Consulta sobre itinerarios</option>
+                    <option value="cotizacion">Consulta sobre cotización</option>
+                    <option value="otro">Otra consulta</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" rows="6"></textarea>
+
+                <button type="button" onclick="validarContacto()">
+                    Enviar consulta
+                </button>
+
+            </form>
+
+            <div id="resultadoContacto">
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>TravelGo - Viajá · Descubrí · Viví</p>
+        <p>&copy; 2026 TravelGo</p>
+    </footer>
+    <script src="js/funciones.js"></script>
+</body>
+
+</html>

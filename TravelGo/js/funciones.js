@@ -194,3 +194,22 @@ const calcularCotizacion = () => {
 `;
 
 }
+const validarContacto = () => {
+
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+    const motivo = document.getElementById("motivo").value;
+    const mensaje = document.getElementById("mensaje").value;
+    const resultado = document.getElementById("resultadoContacto");
+
+    if (nombre == "" || email == "" || motivo == "" || mensaje == "") {
+        resultado.innerHTML = "<p>Por favor, completá todos los campos.</p>";
+        return;
+    }
+
+    resultado.innerHTML = `
+        <h3>¡Consulta enviada!</h3>
+        <p>Gracias ${nombre}. Recibimos tu mensaje correctamente.</p>
+    `;
+
+}
