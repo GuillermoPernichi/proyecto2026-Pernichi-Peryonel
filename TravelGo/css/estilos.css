@@ -250,3 +250,13 @@ footer p {
 .filtro-destinos select {
     padding: 8px;
 }
+
+.tarjeta-itinerario h4 {
+    margin-bottom: 10px;
+}
+
+.tarjeta-itinerario ul {
+    padding-left: 20px;
+    color: #555555;
+    line-height: 1.8;
+}
