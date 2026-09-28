@@ -310,3 +310,39 @@ footer p {
 #resultadoCotizacion:empty {
     display: none;
 }
+
+.seccion-nosotros {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.seccion-nosotros h2 {
+    color: #1d5c63;
+}
+
+.seccion-nosotros p {
+    color: #555555;
+    line-height: 1.7;
+}
+
+.contenedor-equipo {
+    display: flex;
+    gap: 25px;
+}
+
+.tarjeta-integrante {
+    width: 50%;
+    padding: 25px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+}
+
+.tarjeta-integrante h3 {
+    color: #1d5c63;
+    margin-top: 0;
+}
+
+.tarjeta-integrante p {
+    color: #555555;
+}
