@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descubrí destinos de América, Europa y Asia con TravelGo">
+    <meta name="keywords" content="viajes, destinos, itinerarios, turismo, TravelGo">
+    <meta name="author" content="Guillermo Pernichi, Joaquín Peyronel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelGo - Destinos</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body onload="mostrarDestinos(destinos)">
+    <header>
+        <h1>TravelGo</h1>
+        <p>Viajá · Descubrí · Viví</p>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="itinerarios.html">Itinerarios</a>
+            <a href="cotizacion.html">Cotización</a>
+            <a href="nosotros.html">Sobre nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="encabezado-pagina">
+            <h2>Explorá nuestros destinos</h2>
+            <p>Elegí una región y descubrí lugares increíbles para tu próximo viaje.</p>
+        </section>
+        <section class="filtro-destinos">
+            <label for="region">Filtrar por región:</label>
+
+            <select id="region" onchange="filtrarDestinos()">
+                <option value="Todos">Todos</option>
+                <option value="América">América</option>
+                <option value="Europa">Europa</option>
+                <option value="Asia">Asia</option>
+            </select>
+        </section>
+        <section>
+            <h2>Destinos disponibles</h2>
+
+            <div id="listaDestinos" class="contenedor-destinos">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>TravelGo - Viajá · Descubrí · Viví</p>
+        <p>&copy; 2026 TravelGo</p>
+    </footer>
+    <script src="js/funciones.js"></script>
+</body>
+
+</html>
