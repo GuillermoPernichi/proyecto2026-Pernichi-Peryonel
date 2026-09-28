@@ -260,3 +260,53 @@ footer p {
     color: #555555;
     line-height: 1.8;
 }
+
+.seccion-formulario {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.seccion-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.seccion-formulario label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.seccion-formulario input,
+.seccion-formulario select {
+    padding: 10px;
+}
+
+.seccion-formulario button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #1d5c63;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seccion-formulario button:hover {
+    background-color: #153f44;
+}
+
+#resultadoCotizacion {
+    margin-top: 30px;
+}
+
+#resultadoCotizacion {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e8f1f2;
+    border-radius: 10px;
+}
+
+#resultadoCotizacion:empty {
+    display: none;
+}

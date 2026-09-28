@@ -3,37 +3,43 @@ const destinos = [
         nombre: "Argentina",
         region: "América",
         descripcion: "Montañas, naturaleza y paisajes para descubrir.",
-        imagen: "imagenes/argentina.jpg"
+        imagen: "imagenes/argentina.jpg",
+        precioDia: 80
     },
     {
         nombre: "Brasil",
         region: "América",
         descripcion: "Playas, naturaleza y ciudades llenas de vida.",
-        imagen: "imagenes/brasil.jpg"
+        imagen: "imagenes/brasil.jpg",
+        precioDia: 100
     },
     {
         nombre: "España",
         region: "Europa",
         descripcion: "Historia, cultura y una gran variedad de paisajes.",
-        imagen: "imagenes/espana.jpg"
+        imagen: "imagenes/espana.jpg",
+        precioDia: 140
     },
     {
         nombre: "Italia",
         region: "Europa",
         descripcion: "Historia, gastronomía y ciudades inolvidables.",
-        imagen: "imagenes/italia.jpg"
+        imagen: "imagenes/italia.jpg",
+        precioDia: 150
     },
     {
         nombre: "Tailandia",
         region: "Asia",
         descripcion: "Templos, playas paradisíacas y una cultura única.",
-        imagen: "imagenes/tailandia.jpg"
+        imagen: "imagenes/tailandia.jpg",
+        precioDia: 90
     },
     {
         nombre: "Japón",
         region: "Asia",
         descripcion: "Tradición, tecnología y paisajes sorprendentes.",
-        imagen: "imagenes/japon.jpg"
+        imagen: "imagenes/japon.jpg",
+        precioDia: 160
     }
 ];
 const itinerarios = [
@@ -130,5 +136,61 @@ const mostrarItinerarios = (lista) => {
         `;
 
     });
+
+}
+const cargarDestinosCotizacion = () => {
+
+    const selectDestino = document.getElementById("destinoCotizacion");
+
+    destinos.forEach(destino => {
+        selectDestino.innerHTML += `
+            <option value="${destino.nombre}">${destino.nombre}</option>
+        `;
+    });
+
+}
+const calcularCotizacion = () => {
+
+    const nombreDestino = document.getElementById("destinoCotizacion").value;
+    const dias = Number(document.getElementById("dias").value);
+    const viajeros = Number(document.getElementById("viajeros").value);
+    const alojamiento = document.getElementById("alojamiento").value;
+    const resultado = document.getElementById("resultadoCotizacion");
+    const traslado = document.getElementById("traslado").checked;
+    const excursion = document.getElementById("excursion").checked;
+
+    if (nombreDestino == "" || dias <= 0 || viajeros <= 0 || alojamiento == "") {
+        resultado.innerHTML = "<p>Por favor, completá correctamente todos los datos.</p>";
+        return;
+    }
+
+    const destinoSeleccionado = destinos.find(destino => destino.nombre == nombreDestino);
+
+    let multiplicadorAlojamiento = 1;
+
+    if (alojamiento == "estandar") {
+        multiplicadorAlojamiento = 1.25;
+    } else if (alojamiento == "premium") {
+        multiplicadorAlojamiento = 1.50;
+    }
+
+    let total = destinoSeleccionado.precioDia * dias * viajeros * multiplicadorAlojamiento;
+
+    if (traslado) {
+        total += 50 * viajeros;
+    }
+
+    if (excursion) {
+        total += 80 * viajeros;
+    }
+
+    resultado.innerHTML = `
+    <h3>Cotización estimada</h3>
+    <p>Destino: ${destinoSeleccionado.nombre}</p>
+    <p>Duración: ${dias} días</p>
+    <p>Viajeros: ${viajeros}</p>
+    <p>Alojamiento: ${alojamiento}</p>
+    <p><strong>Total estimado: USD ${total}</strong></p>
+`;
 
 }

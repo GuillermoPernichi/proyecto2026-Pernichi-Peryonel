@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Calculá un presupuesto estimado para tu próximo viaje con TravelGo">
+    <meta name="keywords" content="viajes, destinos, itinerarios, turismo, TravelGo">
+    <meta name="author" content="Guillermo Pernichi, Joaquín Peyronel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelGo - Cotización</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body onload="cargarDestinosCotizacion()">
+    <header>
+        <h1>TravelGo</h1>
+        <p>Viajá · Descubrí · Viví</p>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="itinerarios.html">Itinerarios</a>
+            <a href="cotizacion.html">Cotización</a>
+            <a href="nosotros.html">Sobre nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+
+        <section class="encabezado-pagina">
+            <h2>Cotizá tu próximo viaje</h2>
+            <p>Completá los datos y obtené un presupuesto estimado para tu viaje.</p>
+        </section>
+
+        <section class="seccion-formulario">
+
+            <h2>Datos del viaje</h2>
+
+            <form id="formCotizacion">
+
+                <label for="destinoCotizacion">Destino:</label>
+
+                <select id="destinoCotizacion">
+                    <option value="">Seleccionar destino</option>
+                </select>
+
+                <label for="dias">Cantidad de días:</label>
+                <input type="number" id="dias" min="1">
+
+                <label for="viajeros">Cantidad de viajeros:</label>
+                <input type="number" id="viajeros" min="1">
+
+                <label for="alojamiento">Alojamiento:</label>
+                <select id="alojamiento">
+                    <option value="">Seleccionar alojamiento</option>
+                    <option value="economico">Económico</option>
+                    <option value="estandar">Estándar</option>
+                    <option value="premium">Premium</option>
+                </select>
+                <p><strong>Servicios adicionales:</strong></p>
+
+                <label>
+                    <input type="checkbox" id="traslado">
+                    Traslado aeropuerto - hotel (USD 50 por viajero)
+                </label>
+
+                <label>
+                    <input type="checkbox" id="excursion">
+                    Excursión adicional (USD 80 por viajero)
+                </label>
+                <button type="button" onclick="calcularCotizacion()">
+                    Calcular cotización
+                </button>
+
+            </form>
+
+            <div id="resultadoCotizacion">
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>TravelGo - Viajá · Descubrí · Viví</p>
+        <p>&copy; 2026 TravelGo</p>
+    </footer>
+    <script src="js/funciones.js"></script>
+</body>
+
+</html>
