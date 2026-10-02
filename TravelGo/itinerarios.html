@@ -3,20 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Encontrá itinerarios de viaje de diferentes duraciones con TravelGo">
-    <meta name="keywords" content="viajes, destinos, itinerarios, turismo, TravelGo">
+
+    <meta name="description" content="Itinerarios de viaje recomendados por TravelGo">
+
+    <meta name="keywords" content="viajes, itinerarios, turismo, destinos, TravelGo">
+
     <meta name="author" content="Guillermo Pernichi, Joaquín Peyronel">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TravelGo - Itinerarios</title>
+    <title>Itinerarios | TravelGo</title>
 
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<body onload="mostrarItinerarios(itinerarios)">
+<body onload="iniciarItinerarios()">
+
     <header>
-        <h1>TravelGo</h1>
-        <p>Viajá · Descubrí · Viví</p>
+
+        <div class="marca">
+            <h1>TravelGo</h1>
+            <p>Viajá · Descubrí · Viví</p>
+        </div>
 
         <nav>
             <a href="index.html">Inicio</a>
@@ -26,27 +34,115 @@
             <a href="nosotros.html">Sobre nosotros</a>
             <a href="contacto.html">Contacto</a>
         </nav>
+
     </header>
+
     <main>
 
-        <section class="encabezado-pagina">
-            <h2>Itinerarios para tu próximo viaje</h2>
-            <p>Elegí la duración que mejor se adapte a tu viaje y descubrí nuestras propuestas.</p>
+        <section class="presentacion-pagina">
+
+            <h1>Itinerarios</h1>
+
+            <p>
+                Encontrá el recorrido ideal para tu próximo viaje.
+            </p>
+
         </section>
 
-        <section>
-            <h2>Itinerarios disponibles</h2>
+        <section class="filtros-itinerarios">
 
-            <div id="listaItinerarios" class="contenedor-itinerarios">
+            <div class="buscador-itinerarios">
+
+                <label for="buscarItinerario">
+                    Buscar itinerario
+                </label>
+
+                <input type="text" id="buscarItinerario" placeholder="Ej: Japón, Italia clásica, Caribe..."
+                    onkeyup="filtrarItinerarios()">
+
             </div>
+
+            <div class="opciones-filtros-itinerarios">
+
+                <div class="filtro-itinerario">
+
+                    <label for="destinoItinerario">
+                        Destino
+                    </label>
+
+                    <select id="destinoItinerario" onchange="filtrarItinerarios()">
+                        <option value="Todos">
+                            Todos los destinos
+                        </option>
+                    </select>
+
+                </div>
+
+                <div class="filtro-itinerario">
+
+                    <label for="duracionItinerario">
+                        Duración
+                    </label>
+
+                    <select id="duracionItinerario" onchange="filtrarItinerarios()">
+                        <option value="Todos">
+                            Todas
+                        </option>
+
+                        <option value="corto">
+                            Hasta 5 días
+                        </option>
+
+                        <option value="medio">
+                            De 6 a 10 días
+                        </option>
+
+                        <option value="largo">
+                            Más de 10 días
+                        </option>
+                    </select>
+
+                </div>
+
+                <div class="filtro-itinerario">
+
+                    <label for="ordenItinerario">
+                        Ordenar por
+                    </label>
+
+                    <select id="ordenItinerario" onchange="filtrarItinerarios()">
+                        <option value="az">
+                            A - Z
+                        </option>
+
+                        <option value="diasMenor">
+                            Menor duración
+                        </option>
+
+                        <option value="diasMayor">
+                            Mayor duración
+                        </option>
+                    </select>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="listaItinerarios" class="contenedor-itinerarios">
         </section>
 
     </main>
+
     <footer>
-        <p>TravelGo - Viajá · Descubrí · Viví</p>
-        <p>&copy; 2026 TravelGo</p>
+        <p>
+            &copy; 2026 TravelGo - Guillermo Pernichi y Joaquín Peyronel
+        </p>
     </footer>
+
     <script src="js/funciones.js"></script>
+
 </body>
 
 </html>

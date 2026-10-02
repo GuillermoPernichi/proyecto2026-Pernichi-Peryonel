@@ -14,6 +14,7 @@
 </head>
 
 <body onload="cargarDestinosCotizacion()">
+
     <header>
         <h1>TravelGo</h1>
         <p>Viajá · Descubrí · Viví</p>
@@ -27,11 +28,12 @@
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
+
     <main>
 
         <section class="encabezado-pagina">
             <h2>Cotizá tu próximo viaje</h2>
-            <p>Completá los datos y obtené un presupuesto estimado para tu viaje.</p>
+            <p>Elegí un destino, un itinerario y los servicios adicionales para obtener un presupuesto estimado.</p>
         </section>
 
         <section class="seccion-formulario">
@@ -42,34 +44,59 @@
 
                 <label for="destinoCotizacion">Destino:</label>
 
-                <select id="destinoCotizacion">
+                <select id="destinoCotizacion" onchange="cargarItinerariosCotizacion()">
                     <option value="">Seleccionar destino</option>
                 </select>
 
-                <label for="dias">Cantidad de días:</label>
-                <input type="number" id="dias" min="1">
+                <label for="itinerarioCotizacion">Itinerario:</label>
 
-                <label for="viajeros">Cantidad de viajeros:</label>
-                <input type="number" id="viajeros" min="1">
-
-                <label for="alojamiento">Alojamiento:</label>
-                <select id="alojamiento">
-                    <option value="">Seleccionar alojamiento</option>
-                    <option value="economico">Económico</option>
-                    <option value="estandar">Estándar</option>
-                    <option value="premium">Premium</option>
+                <select id="itinerarioCotizacion" onchange="mostrarDatosItinerario()">
+                    <option value="">Seleccionar itinerario</option>
                 </select>
-                <p><strong>Servicios adicionales:</strong></p>
 
-                <label>
-                    <input type="checkbox" id="traslado">
-                    Traslado aeropuerto - hotel (USD 50 por viajero)
-                </label>
+                <div id="datosItinerario">
+                </div>
 
-                <label>
-                    <input type="checkbox" id="excursion">
-                    Excursión adicional (USD 80 por viajero)
-                </label>
+                <label for="viajeros">Cantidad de pasajeros:</label>
+
+                <input type="number" id="viajeros" min="1" max="20" value="1">
+
+                <div class="extras-cotizacion">
+
+                    <h3>Servicios adicionales</h3>
+
+                    <label>
+                        <input type="checkbox" id="traslado">
+                        Traslado aeropuerto - hotel
+                        (USD 50 por pasajero)
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="seguro">
+                        Seguro de viaje
+                        (USD 70 por pasajero)
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="excursion">
+                        Excursión adicional
+                        (USD 80 por pasajero)
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="guia">
+                        Guía privado
+                        (USD 120 por día)
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="comidas">
+                        Paquete de comidas
+                        (USD 35 por pasajero por día)
+                    </label>
+
+                </div>
+
                 <button type="button" onclick="calcularCotizacion()">
                     Calcular cotización
                 </button>
@@ -82,11 +109,14 @@
         </section>
 
     </main>
+
     <footer>
         <p>TravelGo - Viajá · Descubrí · Viví</p>
         <p>&copy; 2026 TravelGo</p>
     </footer>
+
     <script src="js/funciones.js"></script>
+
 </body>
 
 </html>
