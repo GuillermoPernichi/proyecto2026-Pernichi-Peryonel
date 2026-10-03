@@ -41,13 +41,13 @@
             <form id="formContacto">
 
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre">
+                <input type="text" id="nombre" placeholder="Ingresá tu nombre" size="40" maxlength="50" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email">
+                <input type="email" id="email" placeholder="ejemplo@email.com" size="40" maxlength="80" required>
 
                 <label for="motivo">Motivo de contacto:</label>
-                <select id="motivo">
+                <select id="motivo" required>
                     <option value="">Seleccionar motivo</option>
                     <option value="destinos">Consulta sobre destinos</option>
                     <option value="itinerarios">Consulta sobre itinerarios</option>
@@ -56,7 +56,7 @@
                 </select>
 
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" rows="6"></textarea>
+                <textarea id="mensaje" rows="6" maxlength="500" placeholder="Escribí tu consulta" required></textarea>
 
                 <button type="button" onclick="validarContacto()">
                     Enviar consulta

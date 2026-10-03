@@ -257,7 +257,7 @@ nav a:hover {
     color: white;
 }
 
-.tarjeta-destino h3 {
+.destinos-destacados .tarjeta-destino h3 {
     font-size: 22px;
     margin-top: 25px;
     margin-left: 25px;
@@ -265,7 +265,7 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
-.tarjeta-destino p {
+.destinos-destacados .tarjeta-destino p {
     color: #555555;
     line-height: 1.5;
     margin-left: 25px;
@@ -273,7 +273,7 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.tarjeta-destino a {
+.destinos-destacados .tarjeta-destino a {
     color: #1d5c63;
     font-weight: bold;
     text-decoration: none;
@@ -283,7 +283,7 @@ nav a:hover {
     margin-bottom: 25px;
 }
 
-.tarjeta-destino a:hover {
+.destinos-destacados .tarjeta-destino a:hover {
     text-decoration: underline;
 }
 

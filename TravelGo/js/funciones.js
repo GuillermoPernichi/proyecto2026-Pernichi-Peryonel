@@ -2640,25 +2640,6 @@ function aplicarFiltrosDestinos() {
 
     mostrarDestinos(destinosFiltrados);
 }
-const validarContacto = () => {
-
-    const nombre = document.getElementById("nombre").value;
-    const email = document.getElementById("email").value;
-    const motivo = document.getElementById("motivo").value;
-    const mensaje = document.getElementById("mensaje").value;
-    const resultado = document.getElementById("resultadoContacto");
-
-    if (nombre == "" || email == "" || motivo == "" || mensaje == "") {
-        resultado.innerHTML = "<p>Por favor, completá todos los campos.</p>";
-        return;
-    }
-
-    resultado.innerHTML = `
-        <h3>¡Consulta enviada!</h3>
-        <p>Gracias ${nombre}. Recibimos tu mensaje correctamente.</p>
-    `;
-
-}
 function cargarDetalleDestino() {
 
     const idDestino = Number(
@@ -5870,4 +5851,44 @@ function calcularCotizacion() {
 
         </div>
     `;
+}
+/**
+ * Valida los datos ingresados en el formulario de contacto.
+ * Si los datos son correctos, muestra un mensaje de confirmación
+ * y limpia los campos del formulario.
+ */
+const validarContacto = () => {
+
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+    const motivo = document.getElementById("motivo").value;
+    const mensaje = document.getElementById("mensaje").value;
+    const resultado = document.getElementById("resultadoContacto");
+
+    if (nombre == "" || email == "" || motivo == "" || mensaje == "") {
+
+        resultado.innerHTML = `
+            <p>Por favor, completá todos los campos.</p>
+        `;
+
+        return;
+    }
+
+    if (!email.includes("@") || !email.includes(".")) {
+
+        resultado.innerHTML = `
+            <p>Ingresá un email válido.</p>
+        `;
+
+        document.getElementById("email").value = "";
+
+        return;
+    }
+
+    resultado.innerHTML = `
+        <h3>¡Consulta enviada!</h3>
+        <p>Gracias ${nombre}. Recibimos tu mensaje correctamente.</p>
+    `;
+
+    document.getElementById("formContacto").reset();
 }
