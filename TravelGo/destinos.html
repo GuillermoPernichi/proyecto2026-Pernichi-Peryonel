@@ -9,7 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>TravelGo - Destinos</title>
-
+    <link rel="icon" type="image/png" href="imagenes/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -36,8 +39,8 @@
 
             <div class="buscador-destinos">
                 <label for="buscarDestino">Buscar destino</label>
-                <input type="text" id="buscarDestino" placeholder="Ej: Italia, Japón, Argentina..."
-                    onkeyup="buscarDestinos()">
+                <input type="text" id="buscarDestino" placeholder="Ej: Italia, Japón, Argentina..." size="40"
+                    maxlength="50" onkeyup="buscarDestinos()">
             </div>
 
             <div class="continentes-destinos">
@@ -59,9 +62,7 @@
             </div>
 
         </section>
-
-        <div id="listaDestinos" class="contenedor-destinos"></div>
-        <section>
+        <section class="seccion-destinos">
             <h2>Destinos disponibles</h2>
 
             <div id="listaDestinos" class="contenedor-destinos">

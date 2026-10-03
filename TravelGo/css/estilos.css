@@ -4,22 +4,21 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #ffffff;
     color: #222222;
 }
 
 header {
-    padding: 20px 60px;
-    background-color: #ffffff;
+    background-color: #e8f1f2;
+    color: #222222;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
 }
 
 h1 {
     margin: 0;
-}
-
-header p {
-    margin-top: 5px;
 }
 
 nav {
@@ -27,13 +26,10 @@ nav {
 }
 
 nav a {
-    margin-right: 25px;
     color: #222222;
+    margin: 0 10px;
     text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 main {
@@ -46,9 +42,6 @@ section {
     margin-bottom: 50px;
 }
 
-header {
-    border-bottom: 1px solid #dddddd;
-}
 
 header h1 {
     color: #1d5c63;
@@ -60,11 +53,8 @@ header>p {
     font-size: 14px;
 }
 
-nav a {
-    font-weight: bold;
-}
-
 nav a:hover {
+    text-decoration: underline;
     color: #1d5c63;
 }
 
@@ -235,6 +225,10 @@ nav a:hover {
     line-height: 1.5;
 }
 
+.seccion-destinos {
+    max-width: 1200px;
+    margin: 50px auto;
+}
 
 /* Botón de cada destino */
 
@@ -290,19 +284,6 @@ nav a:hover {
 section>h2 {
     color: #222222;
     font-size: 30px;
-}
-
-.contenedor-itinerarios {
-    display: flex;
-    gap: 25px;
-}
-
-.tarjeta-itinerario {
-    width: 33%;
-    padding: 25px;
-    border: 1px solid #dddddd;
-    border-radius: 10px;
-    background-color: #f7f7f7;
 }
 
 .tarjeta-itinerario h3 {
@@ -379,29 +360,6 @@ footer p {
     font-size: 18px;
 }
 
-.region-destino {
-    color: #1d5c63;
-    font-weight: bold;
-}
-
-.filtro-destinos {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.filtro-destinos label {
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.filtro-destinos select {
-    padding: 8px;
-}
-
-.tarjeta-itinerario h4 {
-    margin-bottom: 10px;
-}
-
 .tarjeta-itinerario ul {
     padding-left: 20px;
     color: #555555;
@@ -442,10 +400,6 @@ footer p {
 
 .seccion-formulario button:hover {
     background-color: #153f44;
-}
-
-#resultadoCotizacion {
-    margin-top: 30px;
 }
 
 #resultadoCotizacion {
@@ -711,8 +665,10 @@ footer p {
 
 .tarjeta-itinerario {
     width: 31%;
-    background-color: white;
+    padding: 25px;
+    border: 1px solid #dddddd;
     border-radius: 12px;
+    background-color: white;
     overflow: hidden;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
 }
@@ -763,10 +719,6 @@ footer p {
     margin-bottom: 10px;
 }
 
-.contenido-itinerario ul {
-    padding-left: 20px;
-}
-
 .contenido-itinerario li {
     margin-bottom: 7px;
 }
@@ -795,10 +747,6 @@ footer p {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
 
-.encabezado-itinerario p {
-    color: white;
-}
-
 .itinerarios-destino {
     margin-top: 60px;
 }
@@ -821,25 +769,14 @@ footer p {
 .itinerarios-destino .tarjeta-itinerario {
     width: auto;
     min-width: 0;
-    background-color: white;
-    border: 1px solid #dddddd;
-    border-radius: 12px;
     padding: 30px;
-    box-sizing: border-box;
-}
-
-.itinerarios-destino .contenido-itinerario {
-    width: 100%;
 }
 
 .itinerarios-destino .duracion-itinerario {
-    font-weight: bold;
     margin-bottom: 12px;
 }
 
 .itinerarios-destino .tarjeta-itinerario h3 {
-    font-size: 24px;
-    margin-top: 0;
     margin-bottom: 15px;
 }
 
