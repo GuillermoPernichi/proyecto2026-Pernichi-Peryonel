@@ -53,4 +53,4 @@ TravelGo permite explorar diferentes destinos turísticos, consultar informació
 
 El proyecto puede consultarse mediante **GitHub Pages**:
 
-[Visitar TravelGo](ENLACE_GITHUB_PAGES)
+[Visitar TravelGo](https://guillermopernichi.github.io/proyecto2026-Pernichi-Peryonel/TravelGo/)
