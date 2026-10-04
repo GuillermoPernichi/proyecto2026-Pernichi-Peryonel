@@ -89,10 +89,6 @@ nav a:hover {
     background-color: #153f44;
 }
 
-/* =========================
-   DESTINOS
-   ========================= */
-
 .filtros-destinos {
     max-width: 1200px;
     margin: 30px auto;
@@ -101,9 +97,6 @@ nav a:hover {
     border-radius: 12px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
-
-
-/* Buscador */
 
 .buscador-destinos {
     margin-bottom: 20px;
@@ -122,9 +115,6 @@ nav a:hover {
     border-radius: 6px;
     font-size: 16px;
 }
-
-
-/* Botones de continentes */
 
 .continentes-destinos {
     display: flex;
@@ -148,9 +138,6 @@ nav a:hover {
     color: white;
 }
 
-
-/* Orden */
-
 .orden-destinos {
     display: flex;
     justify-content: flex-end;
@@ -168,9 +155,6 @@ nav a:hover {
     border-radius: 6px;
 }
 
-
-/* Contenedor de tarjetas */
-
 .contenedor-destinos {
     max-width: 1200px;
     margin: 30px auto;
@@ -178,9 +162,6 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 25px;
 }
-
-
-/* Tarjeta */
 
 .tarjeta-destino {
     width: 31%;
@@ -194,17 +175,11 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
-
-/* Imagen */
-
 .tarjeta-destino img {
     width: 100%;
     height: 210px;
     object-fit: cover;
 }
-
-
-/* Contenido */
 
 .contenido-destino {
     padding: 20px;
@@ -229,8 +204,6 @@ nav a:hover {
     max-width: 1200px;
     margin: 50px auto;
 }
-
-/* Botón de cada destino */
 
 .contenido-destino button {
     margin-top: 10px;
@@ -460,16 +433,10 @@ footer p {
     display: none;
 }
 
-/* =========================
-   DETALLE DE DESTINO
-   ========================= */
-
 .detalle-destino {
     max-width: 1200px;
     margin: 40px auto;
 }
-
-/* Encabezado principal */
 
 .encabezado-detalle {
     display: flex;
@@ -501,8 +468,6 @@ footer p {
     line-height: 1.6;
 }
 
-/* Datos generales */
-
 .datos-destino {
     margin-top: 25px;
     padding: 20px;
@@ -513,8 +478,6 @@ footer p {
 .datos-destino p {
     margin: 8px 0;
 }
-
-/* Lugares */
 
 .lugares-destino {
     margin-top: 40px;
@@ -577,8 +540,6 @@ footer p {
     line-height: 1.5;
 }
 
-/* Volver */
-
 .volver-destinos {
     display: inline-block;
     margin-top: 20px;
@@ -592,10 +553,6 @@ footer p {
 .volver-destinos:hover {
     background-color: #164f56;
 }
-
-/* =========================
-   ITINERARIOS
-   ========================= */
 
 .filtros-itinerarios {
     max-width: 1200px;
@@ -648,9 +605,6 @@ footer p {
     background-color: white;
 }
 
-
-/* Contenedor de tarjetas */
-
 .contenedor-itinerarios {
     max-width: 1200px;
     margin: 30px auto;
@@ -659,9 +613,6 @@ footer p {
     flex-wrap: wrap;
     gap: 25px;
 }
-
-
-/* Tarjeta */
 
 .tarjeta-itinerario {
     width: 31%;
@@ -676,9 +627,6 @@ footer p {
 .tarjeta-itinerario:hover {
     transform: translateY(-5px);
 }
-
-
-/* Parte superior */
 
 .encabezado-itinerario {
     padding: 20px;
@@ -703,9 +651,6 @@ footer p {
     margin: 0 0 10px 0;
 }
 
-
-/* Contenido */
-
 .contenido-itinerario {
     padding: 20px;
 }
@@ -723,9 +668,6 @@ footer p {
     margin-bottom: 7px;
 }
 
-
-/* Precio */
-
 .precio-itinerario {
     margin-top: 20px;
     padding-top: 15px;
@@ -734,9 +676,6 @@ footer p {
     font-size: 18px;
     font-weight: bold;
 }
-
-
-/* Sin resultados */
 
 .sin-resultados {
     width: 100%;
@@ -793,10 +732,6 @@ footer p {
     cursor: pointer;
 }
 
-/* =========================
-   COTIZACIÓN
-   ========================= */
-
 .resumen-itinerario-cotizacion {
     margin-top: 15px;
     margin-bottom: 20px;
@@ -816,9 +751,6 @@ footer p {
     margin: 8px 0;
     line-height: 1.5;
 }
-
-
-/* Servicios adicionales */
 
 .extras-cotizacion {
     margin-top: 20px;
@@ -843,9 +775,6 @@ footer p {
 .extras-cotizacion input {
     margin-right: 8px;
 }
-
-
-/* Resultado */
 
 .resumen-cotizacion h2 {
     margin-top: 0;

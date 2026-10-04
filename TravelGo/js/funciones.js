@@ -35,7 +35,7 @@ const destinos = [
                 nombre: "Buenos Aires",
                 zona: "",
                 descripcion: "Una ciudad de gran vida cultural, gastronomía, arquitectura y barrios con identidades muy diferentes.",
-                imagen: "<imagenes/sin-imagen.jpg>"
+                imagen: "imagenes/sin-imagen.jpg"
             },
             {
                 nombre: "Mendoza",

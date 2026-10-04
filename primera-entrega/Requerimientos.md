@@ -11,43 +11,43 @@
 * Documentación
 
 ## Sketch
-- [ ] Versión Desktop y Mobile
-- [ ] Guardado en formato PNG, JPG ó PDF
-- [ ] Dentro de una carpeta llamada "Sketch"
-- [ ] Tener en cuenta los mensajes de error para el usuario
-- [ ] Debe ser realizado con el template
+- [x] Versión Desktop y Mobile
+- [x] Guardado en formato PNG, JPG ó PDF
+- [x] Dentro de una carpeta llamada "Sketch"
+- [x] Tener en cuenta los mensajes de error para el usuario
+- [x] Debe ser realizado con el template
 
 ## Wireframe/Mockup
-- [ ] Dibujado con algún programa como: Figma, AdobeXD, Canvas, Draw.io en Drive, Pencil Project, Mockups, NinjaMock, o similares.
-- [ ] Diseño de Mensajes de error para el usuario
-- [ ] Versión Desktop y Mobile
-- [ ] Guardado en formato PNG, JPG ó PDF
-- [ ] Dentro de una carpeta llamada "Wireframe" ó "Mockup"
+- [x] Dibujado con algún programa como: Figma, AdobeXD, Canvas, Draw.io en Drive, Pencil Project, Mockups, NinjaMock, o similares.
+- [x] Diseño de Mensajes de error para el usuario
+- [x] Versión Desktop y Mobile
+- [x] Guardado en formato PNG, JPG ó PDF
+- [x] Dentro de una carpeta llamada "Wireframe" ó "Mockup"
 
 
 ## Repositorio
-- [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2026-ApellidoAlumno1-ApellidoAlumno2" (en gitHub Classroom)
-- [ ] Crear un Readme.MD en la base del proyecto y colocar información del proyecto/página (mínimamente: título del proyecto, autores, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
-- [ ] En el **readme.md** se debe emplear **Markdown** y aplicar negrita, título de orden 1, 2 y 3, link, items, tabla, index a cada sección
-- [ ] El código debe estar en **gitHubPages** (emplear gh-pages o configurar github para que se tome a la main como la página a visualizar)
-- [ ] Se debe crear al menos una branch por cada desarrollador
-- [ ] Publicar la Web empleando GitHubPages
-- [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc o .DS_Store o node_modules, en todo caso emplear **.gitignore**)
-- [ ] Se debe emplear conventional commits
-- [ ] El historial debe ser consistente y tener al menos 10 commits separados en al menos 4 días
+- [x] El proyecto debe estar subido al repositorio adecuado "Proyecto2026-ApellidoAlumno1-ApellidoAlumno2" (en gitHub Classroom)
+- [x] Crear un Readme.MD en la base del proyecto y colocar información del proyecto/página (mínimamente: título del proyecto, autores, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
+- [x] En el **readme.md** se debe emplear **Markdown** y aplicar negrita, título de orden 1, 2 y 3, link, items, tabla, index a cada sección
+- [x] El código debe estar en **gitHubPages** (emplear gh-pages o configurar github para que se tome a la main como la página a visualizar)
+- [x] Se debe crear al menos una branch por cada desarrollador
+- [x] Publicar la Web empleando GitHubPages
+- [x] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc o .DS_Store o node_modules, en todo caso emplear **.gitignore**)
+- [x] Se debe emplear conventional commits
+- [x] El historial debe ser consistente y tener al menos 10 commits separados en al menos 4 días
 
 ## Proyecto general
-- [ ] NO está permitido descargar un TEMPLATE (diseño 100% desde cero)
-- [ ] La página principal debe llamarse index
-- [ ] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups).
-- [ ] Identar correctamente el código
-- [ ] No debe haber errores presentes (en Webstorm *Code* > *Inspect Code* para verificar que no haya errores)
-- [ ] Se debe emplear favicon
-- [ ] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa (aunque sea para un título)
-- [ ] Debe haber navegación entre todas las páginas
-- [ ] No debe haber errores de ortografía en el contenido visual
-- [ ] "Lorem ipsum" es sólo válido para los prototipos, NO para la página
-- [ ] No debe existir código comentado
+- [x] NO está permitido descargar un TEMPLATE (diseño 100% desde cero)
+- [x] La página principal debe llamarse index
+- [x] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups).
+- [x] Identar correctamente el código
+- [x] No debe haber errores presentes (en Webstorm *Code* > *Inspect Code* para verificar que no haya errores)
+- [x] Se debe emplear favicon
+- [x] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa (aunque sea para un título)
+- [x] Debe haber navegación entre todas las páginas
+- [x] No debe haber errores de ortografía en el contenido visual
+- [x] "Lorem ipsum" es sólo válido para los prototipos, NO para la página
+- [x] No debe existir código comentado
 
 ## Sobre el HTML
 - [x] Todas las etiquetas deben estar en minúscula
@@ -69,7 +69,7 @@
 
 ## Imágenes
 - [x] Debe contener por lo menos una etiqueta ```<img>``` en la página.
-- [ ] Todas las imágenes deben ser incluidas en el repositorio dentro de una carpeta llamada **imagenes** (salvo que sean demasiado pesadas. En ese caso, se puede emplear un servidor externo).
+- [x] Todas las imágenes deben ser incluidas en el repositorio dentro de una carpeta llamada **imagenes** (salvo que sean demasiado pesadas. En ese caso, se puede emplear un servidor externo).
 - [x] No se deben subir videos en el repositorio (excepto que sean MUY livianos).
 - [x] Toda imagen debe tener su atributo alt
 - [x] Las imágenes deben poseer un nombre representativo 
@@ -83,10 +83,10 @@
 - [x] Debe existir un único archivo CSS (se debe evitar código duplicado. Se debe aplicar re-utilización de código/estilos)
 
 #### Sobre Accesibilidad
-- [ ] Toda imagen debe tener su atributo alt
-- [ ] Todo ```<input>``` o ```<select>``` debe tener su ```<label>```
-- [ ] Los labels deben contener el atributo **for** (el for debe contener el id del input al cual se referencia) 
-- [ ] Si hay una tabla en la página, debe contener ```<caption></caption>```
+- [x] Toda imagen debe tener su atributo alt
+- [x] Todo ```<input>``` o ```<select>``` debe tener su ```<label>```
+- [x] Los labels deben contener el atributo **for** (el for debe contener el id del input al cual se referencia) 
+- [x] Si hay una tabla en la página, debe contener ```<caption></caption>```
 
 #### Sobre la funcionalidad JavaScript
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
@@ -101,7 +101,7 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
 - [x] El funcionamiento de la página debe ser consistente.
 
 ## Sobre la documentación
-- [ ] **TODAS** las funciones javaScript deben estar documentadas como vimos en clase.
+- [x] **TODAS** las funciones javaScript deben estar documentadas como vimos en clase.
 ````javascript
 /**
  * Descripción de que hace la función
