@@ -634,14 +634,14 @@ footer p {
     color: white;
 }
 
-.destino-itinerario {
+.tarjeta-itinerario .destino-itinerario {
     margin: 0 0 6px 0;
     font-size: 14px;
     font-weight: bold;
     color: white;
 }
 
-.duracion-itinerario {
+.tarjeta-itinerario .duracion-itinerario {
     margin: 0;
     font-weight: bold;
     color: white;
