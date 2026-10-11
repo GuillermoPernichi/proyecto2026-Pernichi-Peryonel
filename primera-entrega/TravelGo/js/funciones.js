@@ -2497,7 +2497,7 @@ let continenteSeleccionado = "Todos";
  */
 const iniciarDestinos = () => {
 
-    marcarContinenteActivo();
+    marcarContinenteActivo("btnTodos");
 
     aplicarFiltrosDestinos();
 }
@@ -2554,16 +2554,17 @@ const verDestino = (idDestino) => {
 }
 
 /**
- * Guarda el continente seleccionado y actualiza los destinos mostrados.
+ * Filtra los destinos según el continente seleccionado.
  * @method filtrarPorContinente
- * @param {string} continente - Nombre del continente seleccionado.
+ * @param {string} continente Continente seleccionado por el usuario.
+ * @param {string} idBoton Identificador del botón seleccionado.
  * @return No retorna ningún valor.
  */
-const filtrarPorContinente = (continente) => {
+const filtrarPorContinente = (continente, idBoton) => {
 
     continenteSeleccionado = continente;
 
-    marcarContinenteActivo();
+    marcarContinenteActivo(idBoton);
 
     aplicarFiltrosDestinos();
 }
@@ -2571,9 +2572,10 @@ const filtrarPorContinente = (continente) => {
 /**
  * Marca visualmente el botón correspondiente al continente seleccionado.
  * @method marcarContinenteActivo
+ * @param {string} idBoton Identificador del botón seleccionado.
  * @return No retorna ningún valor.
  */
-const marcarContinenteActivo = () => {
+const marcarContinenteActivo = (idBoton) => {
 
     const botones = document.querySelectorAll(".continentes-destinos button");
 
@@ -2581,29 +2583,7 @@ const marcarContinenteActivo = () => {
         boton.classList.remove("continente-activo");
     });
 
-    if (continenteSeleccionado == "Todos") {
-        document.getElementById("btnTodos").classList.add("continente-activo");
-    }
-
-    if (continenteSeleccionado == "América") {
-        document.getElementById("btnAmerica").classList.add("continente-activo");
-    }
-
-    if (continenteSeleccionado == "Europa") {
-        document.getElementById("btnEuropa").classList.add("continente-activo");
-    }
-
-    if (continenteSeleccionado == "Asia") {
-        document.getElementById("btnAsia").classList.add("continente-activo");
-    }
-
-    if (continenteSeleccionado == "África") {
-        document.getElementById("btnAfrica").classList.add("continente-activo");
-    }
-
-    if (continenteSeleccionado == "Oceanía") {
-        document.getElementById("btnOceania").classList.add("continente-activo");
-    }
+    document.getElementById(idBoton).classList.add("continente-activo");
 }
 
 /**
@@ -5253,7 +5233,7 @@ const mostrarItinerariosDestino = (idDestino) => {
                     </p>
 
                     <p>
-                        <strong>Desde USD ${itinerario.precio}</strong>
+                        <strong>Desde ${formatearPrecio(itinerario.precio)}</strong>
                     </p>
 
                     <button
@@ -5533,9 +5513,9 @@ const mostrarItinerarios = (lista) => {
 
 
                         <p class="precio-itinerario">
-                            Desde USD ${itinerario.precio}
-                            por persona
-                        </p>
+    Desde ${formatearPrecio(itinerario.precio)}
+    por persona
+</p>
 
                     </div>
 
@@ -5676,9 +5656,9 @@ const mostrarDatosItinerario = () => {
                 </p>
 
                 <p>
-                    <strong>Precio base:</strong>
-                    USD ${itinerario.precio} por pasajero
-                </p>
+    <strong>Precio base:</strong>
+    ${formatearPrecio(itinerario.precio)} por pasajero
+</p>
 
             </div>
         `;
@@ -5689,6 +5669,19 @@ const mostrarDatosItinerario = () => {
     }
 }
 
+/**
+ * Formatea un precio en dólares con separador de miles.
+ * @method formatearPrecio
+ * @param {number} precio Precio que se desea formatear.
+ * @return {string} Precio con formato de moneda.
+ */
+const formatearPrecio = (precio) => {
+
+    return new Intl.NumberFormat("es-AR", {
+        style: "currency",
+        currency: "USD"
+    }).format(precio);
+}
 
 /**
  * Calcula y muestra la cotización del viaje según el itinerario,
@@ -5737,6 +5730,14 @@ const calcularCotizacion = () => {
         resultado.innerHTML = `
             <p>Completá todos los datos del viaje.</p>
         `;
+
+        return;
+    }
+    if (viajeros > 20) {
+
+        alert("La cantidad máxima de pasajeros es 20.");
+
+        document.getElementById("viajeros").value = "";
 
         return;
     }
@@ -5857,28 +5858,28 @@ const calcularCotizacion = () => {
                 ${viajeros}
             </p>
 
-            <p>
-                <strong>Precio base:</strong>
-                USD ${precioBase}
-            </p>
+<p>
+    <strong>Precio base:</strong>
+    ${formatearPrecio(precioBase)}
+</p>
 
-            <p>
-                <strong>Servicios adicionales:</strong>
-            </p>
+<p>
+    <strong>Servicios adicionales:</strong>
+</p>
 
-            <ul>
-                ${extrasHTML}
-            </ul>
+<ul>
+    ${extrasHTML}
+</ul>
 
-            <p>
-                <strong>Total de adicionales:</strong>
-                USD ${precioExtras}
-            </p>
+<p>
+    <strong>Total de adicionales:</strong>
+    ${formatearPrecio(precioExtras)}
+</p>
 
-            <h3>
-                Total estimado:
-                USD ${precioTotal}
-            </h3>
+<h3>
+    Total estimado:
+    ${formatearPrecio(precioTotal)}
+</h3>
 
         </div>
     `;
