@@ -5513,9 +5513,9 @@ const mostrarItinerarios = (lista) => {
 
 
                         <p class="precio-itinerario">
-    Desde ${formatearPrecio(itinerario.precio)}
-    por persona
-</p>
+                            Desde ${formatearPrecio(itinerario.precio)}
+                            por persona
+                        </p>
 
                     </div>
 
@@ -5656,9 +5656,9 @@ const mostrarDatosItinerario = () => {
                 </p>
 
                 <p>
-    <strong>Precio base:</strong>
-    ${formatearPrecio(itinerario.precio)} por pasajero
-</p>
+                    <strong>Precio base:</strong>
+                    ${formatearPrecio(itinerario.precio)} por pasajero
+                </p>
 
             </div>
         `;
@@ -5858,28 +5858,28 @@ const calcularCotizacion = () => {
                 ${viajeros}
             </p>
 
-<p>
-    <strong>Precio base:</strong>
-    ${formatearPrecio(precioBase)}
-</p>
+            <p>
+                <strong>Precio base:</strong>
+                ${formatearPrecio(precioBase)}
+            </p>
 
-<p>
-    <strong>Servicios adicionales:</strong>
-</p>
+            <p>
+                <strong>Servicios adicionales:</strong>
+            </p>
 
-<ul>
-    ${extrasHTML}
-</ul>
+            <ul>
+                ${extrasHTML}
+            </ul>
 
-<p>
-    <strong>Total de adicionales:</strong>
-    ${formatearPrecio(precioExtras)}
-</p>
+            <p>
+                <strong>Total de adicionales:</strong>
+                ${formatearPrecio(precioExtras)}
+            </p>
 
-<h3>
-    Total estimado:
-    ${formatearPrecio(precioTotal)}
-</h3>
+            <h3>
+                Total estimado:
+                ${formatearPrecio(precioTotal)}
+            </h3>
 
         </div>
     `;
