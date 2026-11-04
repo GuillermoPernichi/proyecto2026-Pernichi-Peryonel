@@ -5724,12 +5724,21 @@ const calcularCotizacion = () => {
     if (
         idDestino == 0 ||
         idItinerario == 0 ||
-        viajeros <= 0
+        document.getElementById("viajeros").value == ""
     ) {
 
         resultado.innerHTML = `
-            <p>Completá todos los datos del viaje.</p>
-        `;
+        <p>Completá todos los datos del viaje.</p>
+    `;
+
+        return;
+    }
+
+    if (viajeros <= 0) {
+
+        resultado.innerHTML = `
+        <p>Cantidad incorrecta de pasajeros.</p>
+    `;
 
         return;
     }

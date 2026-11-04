@@ -358,6 +358,7 @@ footer p {
 .seccion-formulario select,
 .seccion-formulario textarea {
     padding: 10px;
+    resize: none;
 }
 
 .seccion-formulario button {
