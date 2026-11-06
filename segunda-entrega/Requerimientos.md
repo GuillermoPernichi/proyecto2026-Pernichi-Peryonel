@@ -56,7 +56,7 @@
 
 ## Sobre el proyecto general
 - [x] Todas las correcciones y mejoras (sugerencias) solicitadas durante el primer parcial deben estar corregidas.
-- [ ] No debe haber errores presentes en el código (realizar *Code* > *Inspect Code* para verificar que no haya errores)
+- [x] No debe haber errores presentes en el código (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [x] No deben existir imports innecesarios
 
 #### Sobre las Correcciones
