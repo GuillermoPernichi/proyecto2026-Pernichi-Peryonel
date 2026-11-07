@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { obtenerDestinos } from "@api/destinosApi";
 import { obtenerItinerarios } from "@api/itinerariosApi";
+import { formatearPrecio } from "@utils/formatearPrecio";
 
 const preciosExtras = {
   traslado: 50,
@@ -19,12 +20,19 @@ const nombresExtras = {
   comidas: "Paquete de comidas",
 };
 
-const formatearPrecio = (precio) =>
-  new Intl.NumberFormat("es-AR", {
-    style: "currency",
-    currency: "USD",
-  }).format(precio);
+const validarViajeros = (valor) => {
+  if (valor === "") {
+    return "Ingresá la cantidad de pasajeros.";
+  }
 
+  const cantidad = Number(valor);
+
+  if (!Number.isInteger(cantidad) || cantidad < 1 || cantidad > 20) {
+    return "La cantidad de pasajeros debe estar entre 1 y 20.";
+  }
+
+  return "";
+};
 function Cotizacion() {
   const [carrito, setCarrito] = useState(() => {
     try {
@@ -87,6 +95,8 @@ function Cotizacion() {
 
   const [idDestino, setIdDestino] = useState("");
   const [idItinerario, setIdItinerario] = useState("");
+  const [errorDestino, setErrorDestino] = useState("");
+  const [errorItinerario, setErrorItinerario] = useState("");
   useEffect(() => {
     const controlador = new AbortController();
 
@@ -129,8 +139,8 @@ function Cotizacion() {
 
     return () => controlador.abort();
   }, [searchParams]);
-
   const [viajeros, setViajeros] = useState("1");
+  const [errorViajeros, setErrorViajeros] = useState("");
 
   const [extras, setExtras] = useState({
     traslado: false,
@@ -172,13 +182,21 @@ function Cotizacion() {
 
     const cantidad = Number(viajeros);
 
-    if (!idDestino || !itinerarioSeleccionado || viajeros === "") {
-      setError("Completá todos los datos del viaje.");
-      return;
-    }
+    const nuevoErrorDestino = !idDestino
+      ? "Seleccioná un destino para continuar."
+      : "";
 
-    if (!Number.isInteger(cantidad) || cantidad < 1 || cantidad > 20) {
-      setError("La cantidad de pasajeros debe estar entre 1 y 20.");
+    const nuevoErrorItinerario = !itinerarioSeleccionado
+      ? "Seleccioná un itinerario para continuar."
+      : "";
+
+    const nuevoErrorViajeros = validarViajeros(viajeros);
+
+    setErrorDestino(nuevoErrorDestino);
+    setErrorItinerario(nuevoErrorItinerario);
+    setErrorViajeros(nuevoErrorViajeros);
+
+    if (nuevoErrorDestino || nuevoErrorItinerario || nuevoErrorViajeros) {
       return;
     }
 
@@ -248,10 +266,20 @@ function Cotizacion() {
               id="destinoCotizacion"
               value={idDestino}
               onChange={(e) => {
-                setIdDestino(e.target.value);
+                const nuevoDestino = e.target.value;
+
+                setIdDestino(nuevoDestino);
                 setIdItinerario("");
+                setErrorItinerario("");
                 setResultado(null);
+                setErrorDestino(
+                  nuevoDestino === ""
+                    ? "Seleccioná un destino para continuar."
+                    : "",
+                );
               }}
+              aria-invalid={Boolean(errorDestino)}
+              aria-describedby={errorDestino ? "error-destino" : undefined}
             >
               <option value="">Seleccionar destino</option>
 
@@ -262,14 +290,31 @@ function Cotizacion() {
               ))}
             </select>
 
+            {errorDestino && (
+              <p id="error-destino" className="error-cotizacion" role="alert">
+                {errorDestino}
+              </p>
+            )}
+
             <label htmlFor="itinerarioCotizacion">Itinerario:</label>
             <select
               id="itinerarioCotizacion"
               value={idItinerario}
               onChange={(e) => {
-                setIdItinerario(e.target.value);
+                const nuevoItinerario = e.target.value;
+
+                setIdItinerario(nuevoItinerario);
                 setResultado(null);
+                setErrorItinerario(
+                  nuevoItinerario === ""
+                    ? "Seleccioná un itinerario para continuar."
+                    : "",
+                );
               }}
+              aria-invalid={Boolean(errorItinerario)}
+              aria-describedby={
+                errorItinerario ? "error-itinerario" : undefined
+              }
             >
               <option value="">Seleccionar itinerario</option>
 
@@ -279,6 +324,16 @@ function Cotizacion() {
                 </option>
               ))}
             </select>
+
+            {errorItinerario && (
+              <p
+                id="error-itinerario"
+                className="error-cotizacion"
+                role="alert"
+              >
+                {errorItinerario}
+              </p>
+            )}
 
             {itinerarioSeleccionado && (
               <div className="resumen-itinerario-cotizacion">
@@ -305,10 +360,21 @@ function Cotizacion() {
               step="1"
               value={viajeros}
               onChange={(e) => {
-                setViajeros(e.target.value);
+                const nuevoValor = e.target.value;
+
+                setViajeros(nuevoValor);
+                setErrorViajeros(validarViajeros(nuevoValor));
                 setResultado(null);
               }}
+              aria-invalid={Boolean(errorViajeros)}
+              aria-describedby={errorViajeros ? "error-viajeros" : undefined}
             />
+
+            {errorViajeros && (
+              <p id="error-viajeros" className="error-cotizacion" role="alert">
+                {errorViajeros}
+              </p>
+            )}
 
             <div className="extras-cotizacion">
               <h3>Servicios adicionales</h3>
