@@ -23,6 +23,12 @@ function AdministrarDestinos() {
   const [guardando, setGuardando] = useState(false);
   const [mensajeFormulario, setMensajeFormulario] = useState("");
   const [errorFormulario, setErrorFormulario] = useState("");
+  const [errorNombre, setErrorNombre] = useState("");
+  const [errorContinente, setErrorContinente] = useState("");
+  const [errorDescripcion, setErrorDescripcion] = useState("");
+  const [errorMoneda, setErrorMoneda] = useState("");
+  const [errorIdioma, setErrorIdioma] = useState("");
+  const [errorMejorEpoca, setErrorMejorEpoca] = useState("");
   const [idEnEdicion, setIdEnEdicion] = useState(null);
   const [idEliminando, setIdEliminando] = useState(null);
   useEffect(() => {
@@ -62,6 +68,49 @@ function AdministrarDestinos() {
       ...anterior,
       [name]: value,
     }));
+
+    if (name === "nombre") {
+      const nombreLimpio = value.trim();
+
+      if (!nombreLimpio) {
+        setErrorNombre("Ingresá el nombre del destino.");
+      } else {
+        const nombreDuplicado = destinos.some(
+          (destino) =>
+            String(destino.id) !== String(idEnEdicion) &&
+            destino.nombre.toLocaleLowerCase("es") ===
+              nombreLimpio.toLocaleLowerCase("es"),
+        );
+
+        setErrorNombre(
+          nombreDuplicado ? "Ya existe un destino con ese nombre." : "",
+        );
+      }
+    }
+
+    if (name === "continente") {
+      setErrorContinente(value === "" ? "Seleccioná un continente." : "");
+    }
+    if (name === "descripcion") {
+      setErrorDescripcion(
+        value.trim() === "" ? "Ingresá una descripción del destino." : "",
+      );
+    }
+    if (name === "moneda") {
+      setErrorMoneda(
+        value.trim() === "" ? "Ingresá la moneda del destino." : "",
+      );
+    }
+    if (name === "idioma") {
+      setErrorIdioma(
+        value.trim() === "" ? "Ingresá el idioma del destino." : "",
+      );
+    }
+    if (name === "mejorEpoca") {
+      setErrorMejorEpoca(
+        value.trim() === "" ? "Ingresá la mejor época para viajar." : "",
+      );
+    }
   };
   const comenzarEdicion = (destino) => {
     setIdEnEdicion(destino.id);
@@ -78,6 +127,12 @@ function AdministrarDestinos() {
 
     setMensajeFormulario("");
     setErrorFormulario("");
+    setErrorNombre("");
+    setErrorContinente("");
+    setErrorDescripcion("");
+    setErrorMoneda("");
+    setErrorIdioma("");
+    setErrorMejorEpoca("");
 
     window.scrollTo({
       top: 0,
@@ -99,6 +154,12 @@ function AdministrarDestinos() {
 
     setMensajeFormulario("");
     setErrorFormulario("");
+    setErrorNombre("");
+    setErrorContinente("");
+    setErrorDescripcion("");
+    setErrorMoneda("");
+    setErrorIdioma("");
+    setErrorMejorEpoca("");
   };
   const manejarEliminacion = async (destino) => {
     const confirmado = window.confirm(
@@ -149,14 +210,32 @@ function AdministrarDestinos() {
       imagen: formulario.imagen.trim() || "/imagenes/sin-imagen.jpg",
     };
 
-    if (
-      !datosDestino.nombre ||
-      !datosDestino.continente ||
-      !datosDestino.descripcion ||
-      !datosDestino.moneda ||
-      !datosDestino.idioma ||
-      !datosDestino.mejorEpoca
-    ) {
+    const errores = {
+      nombre: !datosDestino.nombre,
+      continente: !datosDestino.continente,
+      descripcion: !datosDestino.descripcion,
+      moneda: !datosDestino.moneda,
+      idioma: !datosDestino.idioma,
+      mejorEpoca: !datosDestino.mejorEpoca,
+    };
+
+    setErrorNombre(errores.nombre ? "Ingresá el nombre del destino." : "");
+
+    setErrorContinente(errores.continente ? "Seleccioná un continente." : "");
+
+    setErrorDescripcion(
+      errores.descripcion ? "Ingresá una descripción del destino." : "",
+    );
+
+    setErrorMoneda(errores.moneda ? "Ingresá la moneda del destino." : "");
+
+    setErrorIdioma(errores.idioma ? "Ingresá el idioma del destino." : "");
+
+    setErrorMejorEpoca(
+      errores.mejorEpoca ? "Ingresá la mejor época para viajar." : "",
+    );
+
+    if (Object.values(errores).some(Boolean)) {
       setErrorFormulario("Completá todos los campos obligatorios.");
       return;
     }
@@ -169,9 +248,11 @@ function AdministrarDestinos() {
     );
 
     if (nombreDuplicado) {
-      setErrorFormulario("Ya existe un destino con ese nombre.");
+      setErrorNombre("Ya existe un destino con ese nombre.");
       return;
     }
+
+    setErrorNombre("");
 
     try {
       setGuardando(true);
@@ -213,6 +294,12 @@ function AdministrarDestinos() {
         mejorEpoca: "",
         imagen: "",
       });
+      setErrorNombre("");
+      setErrorContinente("");
+      setErrorDescripcion("");
+      setErrorMoneda("");
+      setErrorIdioma("");
+      setErrorMejorEpoca("");
     } catch (error) {
       setErrorFormulario(error.message);
     } finally {
@@ -230,7 +317,7 @@ function AdministrarDestinos() {
           {idEnEdicion !== null ? "Editar destino" : "Agregar nuevo destino"}
         </h2>
 
-        <form onSubmit={manejarEnvio} className="formulario-destino">
+        <form onSubmit={manejarEnvio} className="formulario-destino" noValidate>
           <div className="campos-formulario-destino">
             <div className="campo-destino">
               <label htmlFor="nombre-destino">Nombre *</label>
@@ -242,7 +329,15 @@ function AdministrarDestinos() {
                 onChange={manejarCambio}
                 required
                 maxLength={100}
+                aria-invalid={Boolean(errorNombre)}
+                aria-describedby={errorNombre ? "error-nombre" : undefined}
               />
+
+              {errorNombre && (
+                <p id="error-nombre" className="error-formulario" role="alert">
+                  {errorNombre}
+                </p>
+              )}
             </div>
 
             <div className="campo-destino">
@@ -253,6 +348,10 @@ function AdministrarDestinos() {
                 value={formulario.continente}
                 onChange={manejarCambio}
                 required
+                aria-invalid={Boolean(errorContinente)}
+                aria-describedby={
+                  errorContinente ? "error-continente" : undefined
+                }
               >
                 <option value="">Seleccioná un continente</option>
                 <option value="América">América</option>
@@ -261,6 +360,15 @@ function AdministrarDestinos() {
                 <option value="África">África</option>
                 <option value="Oceanía">Oceanía</option>
               </select>
+              {errorContinente && (
+                <p
+                  id="error-continente"
+                  className="error-formulario"
+                  role="alert"
+                >
+                  {errorContinente}
+                </p>
+              )}
             </div>
 
             <div className="campo-destino campo-ancho-completo">
@@ -272,7 +380,20 @@ function AdministrarDestinos() {
                 onChange={manejarCambio}
                 rows={4}
                 required
+                aria-invalid={Boolean(errorDescripcion)}
+                aria-describedby={
+                  errorDescripcion ? "error-descripcion" : undefined
+                }
               />
+              {errorDescripcion && (
+                <p
+                  id="error-descripcion"
+                  className="error-formulario"
+                  role="alert"
+                >
+                  {errorDescripcion}
+                </p>
+              )}
             </div>
 
             <div className="campo-destino">
@@ -284,7 +405,14 @@ function AdministrarDestinos() {
                 value={formulario.moneda}
                 onChange={manejarCambio}
                 required
+                aria-invalid={Boolean(errorMoneda)}
+                aria-describedby={errorMoneda ? "error-moneda" : undefined}
               />
+              {errorMoneda && (
+                <p id="error-moneda" className="error-formulario" role="alert">
+                  {errorMoneda}
+                </p>
+              )}
             </div>
 
             <div className="campo-destino">
@@ -296,7 +424,14 @@ function AdministrarDestinos() {
                 value={formulario.idioma}
                 onChange={manejarCambio}
                 required
+                aria-invalid={Boolean(errorIdioma)}
+                aria-describedby={errorIdioma ? "error-idioma" : undefined}
               />
+              {errorIdioma && (
+                <p id="error-idioma" className="error-formulario" role="alert">
+                  {errorIdioma}
+                </p>
+              )}
             </div>
 
             <div className="campo-destino">
@@ -308,7 +443,20 @@ function AdministrarDestinos() {
                 value={formulario.mejorEpoca}
                 onChange={manejarCambio}
                 required
+                aria-invalid={Boolean(errorMejorEpoca)}
+                aria-describedby={
+                  errorMejorEpoca ? "error-mejor-epoca" : undefined
+                }
               />
+              {errorMejorEpoca && (
+                <p
+                  id="error-mejor-epoca"
+                  className="error-formulario"
+                  role="alert"
+                >
+                  {errorMejorEpoca}
+                </p>
+              )}
             </div>
 
             <div className="campo-destino">
