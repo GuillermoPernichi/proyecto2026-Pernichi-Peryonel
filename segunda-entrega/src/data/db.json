@@ -1,7 +1,7 @@
 {
   "destinos": [
     {
-      "id": 1,
+      "id": "1",
       "nombre": "Anguila",
       "continente": "América",
       "descripcion": "Playas de arena blanca, aguas turquesas y una atmósfera tranquila en pleno Caribe.",
@@ -12,7 +12,7 @@
       "lugares": []
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "Antigua y Barbuda",
       "continente": "América",
       "descripcion": "Un destino caribeño reconocido por sus playas, bahías y paisajes tropicales.",
@@ -23,7 +23,7 @@
       "lugares": []
     },
     {
-      "id": 3,
+      "id": "3",
       "nombre": "Argentina",
       "continente": "América",
       "descripcion": "Grandes ciudades, montañas, vinos y algunos de los paisajes más diversos de Sudamérica.",
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "nombre": "Aruba",
       "continente": "América",
       "descripcion": "Playas paradisíacas, clima cálido y paisajes únicos en el Caribe neerlandés.",
@@ -64,7 +64,7 @@
       "lugares": []
     },
     {
-      "id": 5,
+      "id": "5",
       "nombre": "Bahamas",
       "continente": "América",
       "descripcion": "Un archipiélago de aguas cristalinas, playas espectaculares y numerosas islas para descubrir.",
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "nombre": "Barbados",
       "continente": "América",
       "descripcion": "Playas, cultura caribeña y paisajes tropicales en una de las islas más conocidas del Caribe.",
@@ -99,7 +99,7 @@
       "lugares": []
     },
     {
-      "id": 7,
+      "id": "7",
       "nombre": "Bermudas",
       "continente": "América",
       "descripcion": "Playas de tonos rosados, pequeñas bahías y un ambiente insular con identidad propia.",
@@ -110,7 +110,7 @@
       "lugares": []
     },
     {
-      "id": 8,
+      "id": "8",
       "nombre": "Bonaire",
       "continente": "América",
       "descripcion": "Naturaleza, tranquilidad y aguas ideales para descubrir la vida marina del Caribe.",
@@ -121,7 +121,7 @@
       "lugares": []
     },
     {
-      "id": 9,
+      "id": "9",
       "nombre": "Brasil",
       "continente": "América",
       "descripcion": "Playas, naturaleza, gastronomía y ciudades llenas de energía y diversidad.",
@@ -163,7 +163,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": "10",
       "nombre": "Canadá",
       "continente": "América",
       "descripcion": "Grandes ciudades, montañas, lagos y parques nacionales de paisajes espectaculares.",
@@ -295,7 +295,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": "11",
       "nombre": "Chile",
       "continente": "América",
       "descripcion": "Un país de contrastes entre grandes ciudades, desiertos, montañas y paisajes andinos.",
@@ -319,7 +319,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": "12",
       "nombre": "Colombia",
       "continente": "América",
       "descripcion": "Ciudades históricas, cultura, montañas y costas caribeñas llenas de color.",
@@ -355,7 +355,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": "13",
       "nombre": "Cuba",
       "continente": "América",
       "descripcion": "Historia, arquitectura, música y playas caribeñas en un destino de identidad inconfundible.",
@@ -366,7 +366,7 @@
       "lugares": []
     },
     {
-      "id": 14,
+      "id": "14",
       "nombre": "Curazao",
       "continente": "América",
       "descripcion": "Arquitectura colorida, playas y aguas cristalinas en el corazón del Caribe.",
@@ -377,7 +377,7 @@
       "lugares": []
     },
     {
-      "id": 15,
+      "id": "15",
       "nombre": "Dominica",
       "continente": "América",
       "descripcion": "Selvas tropicales, cascadas y naturaleza exuberante en una isla ideal para la aventura.",
@@ -388,7 +388,7 @@
       "lugares": []
     },
     {
-      "id": 16,
+      "id": "16",
       "nombre": "Ecuador",
       "continente": "América",
       "descripcion": "Historia andina, cultura y paisajes naturales en uno de los países más diversos de Sudamérica.",
@@ -406,7 +406,7 @@
       ]
     },
     {
-      "id": 17,
+      "id": "17",
       "nombre": "Estados Unidos",
       "continente": "América",
       "descripcion": "Grandes ciudades, parques, playas, rutas y paisajes muy diferentes a lo largo de todo el país.",
@@ -586,7 +586,7 @@
       ]
     },
     {
-      "id": 18,
+      "id": "18",
       "nombre": "Granada",
       "continente": "América",
       "descripcion": "Playas, naturaleza tropical y tradición caribeña en la conocida isla de las especias.",
@@ -597,7 +597,7 @@
       "lugares": []
     },
     {
-      "id": 19,
+      "id": "19",
       "nombre": "Guadalupe",
       "continente": "América",
       "descripcion": "Un archipiélago caribeño que combina playas, vegetación tropical y cultura francesa.",
@@ -608,7 +608,7 @@
       "lugares": []
     },
     {
-      "id": 20,
+      "id": "20",
       "nombre": "Islas Vírgenes Británicas",
       "continente": "América",
       "descripcion": "Islas de aguas transparentes, pequeñas bahías y algunos de los paisajes más atractivos del Caribe.",
@@ -626,7 +626,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": "21",
       "nombre": "Islas Vírgenes de Estados Unidos",
       "continente": "América",
       "descripcion": "Playas, naturaleza y ambiente caribeño distribuidos entre varias islas de gran belleza.",
@@ -656,7 +656,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": "22",
       "nombre": "Jamaica",
       "continente": "América",
       "descripcion": "Música, cultura, playas y paisajes tropicales en uno de los grandes destinos del Caribe.",
@@ -667,7 +667,7 @@
       "lugares": []
     },
     {
-      "id": 23,
+      "id": "23",
       "nombre": "Martinica",
       "continente": "América",
       "descripcion": "Naturaleza tropical, playas y cultura franco-caribeña en una isla de gran diversidad.",
@@ -678,7 +678,7 @@
       "lugares": []
     },
     {
-      "id": 24,
+      "id": "24",
       "nombre": "México",
       "continente": "América",
       "descripcion": "Historia, gastronomía, playas, grandes ciudades y una enorme diversidad cultural y natural.",
@@ -756,7 +756,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": "25",
       "nombre": "Perú",
       "continente": "América",
       "descripcion": "Historia, cultura andina, gastronomía y algunos de los paisajes más emblemáticos de Sudamérica.",
@@ -786,7 +786,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": "26",
       "nombre": "Puerto Rico",
       "continente": "América",
       "descripcion": "Playas, ciudades históricas, naturaleza y cultura caribeña en un destino lleno de contrastes.",
@@ -797,7 +797,7 @@
       "lugares": []
     },
     {
-      "id": 27,
+      "id": "27",
       "nombre": "República Dominicana",
       "continente": "América",
       "descripcion": "Extensas playas, paisajes tropicales y una amplia propuesta de experiencias caribeñas.",
@@ -808,7 +808,7 @@
       "lugares": []
     },
     {
-      "id": 28,
+      "id": "28",
       "nombre": "Saint Kitts y Nevis",
       "continente": "América",
       "descripcion": "Dos pequeñas islas caribeñas de playas, montañas y paisajes tropicales.",
@@ -819,7 +819,7 @@
       "lugares": []
     },
     {
-      "id": 29,
+      "id": "29",
       "nombre": "Santa Lucía",
       "continente": "América",
       "descripcion": "Montañas volcánicas, selva y playas en uno de los paisajes más característicos del Caribe.",
@@ -830,7 +830,7 @@
       "lugares": []
     },
     {
-      "id": 30,
+      "id": "30",
       "nombre": "Sint Maarten",
       "continente": "América",
       "descripcion": "Playas, ambiente caribeño y una particular combinación de influencias culturales.",
@@ -841,7 +841,7 @@
       "lugares": []
     },
     {
-      "id": 31,
+      "id": "31",
       "nombre": "Tobago",
       "continente": "América",
       "descripcion": "Una isla de playas tranquilas, arrecifes y naturaleza tropical.",
@@ -852,7 +852,7 @@
       "lugares": []
     },
     {
-      "id": 32,
+      "id": "32",
       "nombre": "Alemania",
       "continente": "Europa",
       "descripcion": "Historia, cultura y ciudades dinámicas en el corazón de Europa.",
@@ -870,7 +870,7 @@
       ]
     },
     {
-      "id": 33,
+      "id": "33",
       "nombre": "Austria",
       "continente": "Europa",
       "descripcion": "Arquitectura imperial, música, cultura y paisajes centroeuropeos.",
@@ -888,7 +888,7 @@
       ]
     },
     {
-      "id": 34,
+      "id": "34",
       "nombre": "Croacia",
       "continente": "Europa",
       "descripcion": "Ciudades históricas, costa adriática y paisajes mediterráneos.",
@@ -912,7 +912,7 @@
       ]
     },
     {
-      "id": 35,
+      "id": "35",
       "nombre": "España",
       "continente": "Europa",
       "descripcion": "Historia, gastronomía, playas, islas y ciudades llenas de cultura.",
@@ -1020,7 +1020,7 @@
       ]
     },
     {
-      "id": 36,
+      "id": "36",
       "nombre": "Francia",
       "continente": "Europa",
       "descripcion": "Arte, gastronomía, grandes ciudades, pueblos, costas y paisajes alpinos.",
@@ -1092,7 +1092,7 @@
       ]
     },
     {
-      "id": 37,
+      "id": "37",
       "nombre": "Grecia",
       "continente": "Europa",
       "descripcion": "Historia antigua, pueblos mediterráneos y algunas de las islas más famosas de Europa.",
@@ -1140,7 +1140,7 @@
       ]
     },
     {
-      "id": 38,
+      "id": "38",
       "nombre": "Hungría",
       "continente": "Europa",
       "descripcion": "Historia, arquitectura y tradición centroeuropea a orillas del Danubio.",
@@ -1158,7 +1158,7 @@
       ]
     },
     {
-      "id": 39,
+      "id": "39",
       "nombre": "Irlanda",
       "continente": "Europa",
       "descripcion": "Paisajes verdes, historia, música y una cultura reconocida en todo el mundo.",
@@ -1176,7 +1176,7 @@
       ]
     },
     {
-      "id": 40,
+      "id": "40",
       "nombre": "Islandia",
       "continente": "Europa",
       "descripcion": "Volcanes, glaciares, cascadas y algunos de los paisajes naturales más singulares de Europa.",
@@ -1194,7 +1194,7 @@
       ]
     },
     {
-      "id": 41,
+      "id": "41",
       "nombre": "Italia",
       "continente": "Europa",
       "descripcion": "Arte, historia, gastronomía y una extraordinaria variedad de ciudades y paisajes.",
@@ -1272,7 +1272,7 @@
       ]
     },
     {
-      "id": 42,
+      "id": "42",
       "nombre": "Malta",
       "continente": "Europa",
       "descripcion": "Historia mediterránea, pequeñas ciudades y costas de aguas transparentes.",
@@ -1290,7 +1290,7 @@
       ]
     },
     {
-      "id": 43,
+      "id": "43",
       "nombre": "Noruega",
       "continente": "Europa",
       "descripcion": "Fiordos, montañas y paisajes escandinavos en un entorno de gran belleza natural.",
@@ -1308,7 +1308,7 @@
       ]
     },
     {
-      "id": 44,
+      "id": "44",
       "nombre": "Países Bajos",
       "continente": "Europa",
       "descripcion": "Canales, arquitectura, cultura y ciudades de gran identidad.",
@@ -1326,7 +1326,7 @@
       ]
     },
     {
-      "id": 45,
+      "id": "45",
       "nombre": "Polonia",
       "continente": "Europa",
       "descripcion": "Historia, arquitectura y ciudades con un importante patrimonio cultural.",
@@ -1344,7 +1344,7 @@
       ]
     },
     {
-      "id": 46,
+      "id": "46",
       "nombre": "Portugal",
       "continente": "Europa",
       "descripcion": "Ciudades históricas, costa atlántica, gastronomía e islas de paisajes únicos.",
@@ -1374,7 +1374,7 @@
       ]
     },
     {
-      "id": 47,
+      "id": "47",
       "nombre": "Reino Unido",
       "continente": "Europa",
       "descripcion": "Grandes ciudades, historia, pueblos y paisajes que recorren Inglaterra, Escocia, Gales e Irlanda del Norte.",
@@ -1506,7 +1506,7 @@
       ]
     },
     {
-      "id": 48,
+      "id": "48",
       "nombre": "República Checa",
       "continente": "Europa",
       "descripcion": "Arquitectura, historia y tradición centroeuropea con ciudades de gran atractivo cultural.",
@@ -1524,7 +1524,7 @@
       ]
     },
     {
-      "id": 49,
+      "id": "49",
       "nombre": "Rumania",
       "continente": "Europa",
       "descripcion": "Historia, arquitectura y paisajes de Europa oriental.",
@@ -1542,7 +1542,7 @@
       ]
     },
     {
-      "id": 50,
+      "id": "50",
       "nombre": "Arabia Saudita",
       "continente": "Asia",
       "descripcion": "Una combinación de ciudades modernas, tradición, desiertos y patrimonio histórico.",
@@ -1560,7 +1560,7 @@
       ]
     },
     {
-      "id": 51,
+      "id": "51",
       "nombre": "Baréin",
       "continente": "Asia",
       "descripcion": "Un pequeño país insular del golfo Pérsico donde conviven historia y modernidad.",
@@ -1578,7 +1578,7 @@
       ]
     },
     {
-      "id": 52,
+      "id": "52",
       "nombre": "Camboya",
       "continente": "Asia",
       "descripcion": "Templos, historia y paisajes del sudeste asiático en un destino de enorme riqueza cultural.",
@@ -1596,7 +1596,7 @@
       ]
     },
     {
-      "id": 53,
+      "id": "53",
       "nombre": "Catar",
       "continente": "Asia",
       "descripcion": "Arquitectura contemporánea, cultura árabe y paisajes del golfo Pérsico.",
@@ -1614,7 +1614,7 @@
       ]
     },
     {
-      "id": 54,
+      "id": "54",
       "nombre": "China",
       "continente": "Asia",
       "descripcion": "Una enorme diversidad de historia, cultura, gastronomía y grandes ciudades.",
@@ -1644,7 +1644,7 @@
       ]
     },
     {
-      "id": 55,
+      "id": "55",
       "nombre": "Corea del Sur",
       "continente": "Asia",
       "descripcion": "Tradición, tecnología, gastronomía y cultura contemporánea en Asia oriental.",
@@ -1662,7 +1662,7 @@
       ]
     },
     {
-      "id": 56,
+      "id": "56",
       "nombre": "Emiratos Árabes Unidos",
       "continente": "Asia",
       "descripcion": "Ciudades futuristas, desierto, playas y una extraordinaria arquitectura contemporánea.",
@@ -1692,7 +1692,7 @@
       ]
     },
     {
-      "id": 57,
+      "id": "57",
       "nombre": "Filipinas",
       "continente": "Asia",
       "descripcion": "Un enorme archipiélago de playas, naturaleza tropical y una gran diversidad cultural.",
@@ -1710,7 +1710,7 @@
       ]
     },
     {
-      "id": 58,
+      "id": "58",
       "nombre": "Georgia",
       "continente": "Asia",
       "descripcion": "Montañas, historia, gastronomía y una cultura situada entre Europa y Asia.",
@@ -1728,7 +1728,7 @@
       ]
     },
     {
-      "id": 59,
+      "id": "59",
       "nombre": "India",
       "continente": "Asia",
       "descripcion": "Una enorme diversidad de culturas, paisajes, religiones, ciudades y tradiciones.",
@@ -1770,7 +1770,7 @@
       ]
     },
     {
-      "id": 60,
+      "id": "60",
       "nombre": "Indonesia",
       "continente": "Asia",
       "descripcion": "Miles de islas, volcanes, playas, templos y una enorme diversidad cultural.",
@@ -1788,7 +1788,7 @@
       ]
     },
     {
-      "id": 61,
+      "id": "61",
       "nombre": "Japón",
       "continente": "Asia",
       "descripcion": "Tradición, tecnología, gastronomía y una extraordinaria diversidad de ciudades y paisajes.",
@@ -1872,7 +1872,7 @@
       ]
     },
     {
-      "id": 62,
+      "id": "62",
       "nombre": "Jordania",
       "continente": "Asia",
       "descripcion": "Ciudades históricas, desiertos y algunos de los grandes sitios arqueológicos de Medio Oriente.",
@@ -1902,7 +1902,7 @@
       ]
     },
     {
-      "id": 63,
+      "id": "63",
       "nombre": "Malasia",
       "continente": "Asia",
       "descripcion": "Grandes ciudades, diversidad cultural, gastronomía y naturaleza tropical.",
@@ -1920,7 +1920,7 @@
       ]
     },
     {
-      "id": 64,
+      "id": "64",
       "nombre": "Maldivas",
       "continente": "Asia",
       "descripcion": "Atolones, playas de arena blanca y aguas transparentes en pleno océano Índico.",
@@ -1931,7 +1931,7 @@
       "lugares": []
     },
     {
-      "id": 65,
+      "id": "65",
       "nombre": "Nepal",
       "continente": "Asia",
       "descripcion": "Montañas, templos y cultura en el corazón del Himalaya.",
@@ -1949,7 +1949,7 @@
       ]
     },
     {
-      "id": 66,
+      "id": "66",
       "nombre": "Omán",
       "continente": "Asia",
       "descripcion": "Desiertos, montañas, costas y ciudades que conservan una marcada identidad árabe.",
@@ -1973,7 +1973,7 @@
       ]
     },
     {
-      "id": 67,
+      "id": "67",
       "nombre": "Singapur",
       "continente": "Asia",
       "descripcion": "Una ciudad-Estado moderna, multicultural y reconocida por su arquitectura, gastronomía y espacios verdes.",
@@ -1984,7 +1984,7 @@
       "lugares": []
     },
     {
-      "id": 68,
+      "id": "68",
       "nombre": "Sri Lanka",
       "continente": "Asia",
       "descripcion": "Playas, ciudades históricas, montañas y paisajes tropicales en el océano Índico.",
@@ -2026,7 +2026,7 @@
       ]
     },
     {
-      "id": 69,
+      "id": "69",
       "nombre": "Tailandia",
       "continente": "Asia",
       "descripcion": "Templos, gastronomía, grandes ciudades, montañas y algunas de las playas más famosas del sudeste asiático.",
@@ -2062,7 +2062,7 @@
       ]
     },
     {
-      "id": 70,
+      "id": "70",
       "nombre": "Turquía",
       "continente": "Asia",
       "descripcion": "Historia, cultura, gastronomía y paisajes situados entre Europa y Asia.",
@@ -2086,7 +2086,7 @@
       ]
     },
     {
-      "id": 71,
+      "id": "71",
       "nombre": "Vietnam",
       "continente": "Asia",
       "descripcion": "Ciudades vibrantes, gastronomía, historia y paisajes muy diversos de norte a sur.",
@@ -2128,7 +2128,7 @@
       ]
     },
     {
-      "id": 72,
+      "id": "72",
       "nombre": "Egipto",
       "continente": "África",
       "descripcion": "Historia milenaria, templos, ciudades y paisajes entre el Nilo, el desierto y el mar Rojo.",
@@ -2164,7 +2164,7 @@
       ]
     },
     {
-      "id": 73,
+      "id": "73",
       "nombre": "Kenia",
       "continente": "África",
       "descripcion": "Sabana, vida silvestre, grandes ciudades y playas sobre el océano Índico.",
@@ -2188,7 +2188,7 @@
       ]
     },
     {
-      "id": 74,
+      "id": "74",
       "nombre": "Marruecos",
       "continente": "África",
       "descripcion": "Medinas, desiertos, montañas, mercados y una cultura marcada por múltiples influencias.",
@@ -2224,7 +2224,7 @@
       ]
     },
     {
-      "id": 75,
+      "id": "75",
       "nombre": "Mauricio",
       "continente": "África",
       "descripcion": "Playas tropicales, montañas y una rica combinación de culturas en el océano Índico.",
@@ -2235,7 +2235,7 @@
       "lugares": []
     },
     {
-      "id": 76,
+      "id": "76",
       "nombre": "Sudáfrica",
       "continente": "África",
       "descripcion": "Grandes ciudades, costas, montañas, viñedos y una extraordinaria diversidad natural.",
@@ -2253,7 +2253,7 @@
       ]
     },
     {
-      "id": 77,
+      "id": "77",
       "nombre": "Tanzania",
       "continente": "África",
       "descripcion": "Safaris, montañas, naturaleza y playas tropicales sobre el océano Índico.",
@@ -2283,7 +2283,7 @@
       ]
     },
     {
-      "id": 78,
+      "id": "78",
       "nombre": "Zambia",
       "continente": "África",
       "descripcion": "Naturaleza, grandes ríos y paisajes espectaculares en el sur de África.",
@@ -2301,7 +2301,7 @@
       ]
     },
     {
-      "id": 79,
+      "id": "79",
       "nombre": "Zimbabue",
       "continente": "África",
       "descripcion": "Paisajes naturales, vida silvestre y uno de los grandes atractivos naturales del continente africano.",
@@ -2319,7 +2319,7 @@
       ]
     },
     {
-      "id": 80,
+      "id": "80",
       "nombre": "Australia",
       "continente": "Oceanía",
       "descripcion": "Grandes ciudades, playas, naturaleza, regiones vitivinícolas y paisajes únicos.",
@@ -2361,7 +2361,7 @@
       ]
     },
     {
-      "id": 81,
+      "id": "81",
       "nombre": "Fiyi",
       "continente": "Oceanía",
       "descripcion": "Islas tropicales, playas, arrecifes y cultura del Pacífico Sur.",
@@ -2379,7 +2379,7 @@
       ]
     },
     {
-      "id": 82,
+      "id": "82",
       "nombre": "Islas Cook",
       "continente": "Oceanía",
       "descripcion": "Pequeñas islas del Pacífico de lagunas transparentes, playas y paisajes tropicales.",
@@ -2403,7 +2403,7 @@
       ]
     },
     {
-      "id": 83,
+      "id": "83",
       "nombre": "Nueva Zelanda",
       "continente": "Oceanía",
       "descripcion": "Montañas, lagos, volcanes, grandes paisajes naturales y ciudades rodeadas de naturaleza.",
@@ -2445,7 +2445,7 @@
       ]
     },
     {
-      "id": 84,
+      "id": "84",
       "nombre": "Polinesia Francesa",
       "continente": "Oceanía",
       "descripcion": "Islas volcánicas, lagunas turquesas y algunos de los paisajes tropicales más reconocidos del Pacífico.",
@@ -2469,7 +2469,7 @@
       ]
     },
     {
-      "id": 85,
+      "id": "85",
       "nombre": "Islas Caimán",
       "continente": "América",
       "descripcion": "Un archipiélago caribeño de playas de aguas transparentes, arrecifes y paisajes tropicales.",
@@ -2489,7 +2489,7 @@
   ],
   "itinerarios": [
     {
-      "id": 1,
+      "id": "1",
       "idDestino": 1,
       "nombre": "Escapada a Anguila",
       "dias": 5,
@@ -2509,7 +2509,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "idDestino": 2,
       "nombre": "Antigua y Barbuda caribeña",
       "dias": 6,
@@ -2529,7 +2529,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "idDestino": 3,
       "nombre": "Argentina entre ciudad y montaña",
       "dias": 9,
@@ -2549,7 +2549,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "idDestino": 4,
       "nombre": "Aruba esencial",
       "dias": 6,
@@ -2569,7 +2569,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "idDestino": 5,
       "nombre": "Bahamas entre islas",
       "dias": 7,
@@ -2589,7 +2589,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "idDestino": 6,
       "nombre": "Barbados caribeño",
       "dias": 6,
@@ -2609,7 +2609,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": "7",
       "idDestino": 7,
       "nombre": "Bermudas esencial",
       "dias": 5,
@@ -2629,7 +2629,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": "8",
       "idDestino": 8,
       "nombre": "Bonaire natural",
       "dias": 5,
@@ -2649,7 +2649,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": "9",
       "idDestino": 9,
       "nombre": "Brasil de norte a sur",
       "dias": 13,
@@ -2669,7 +2669,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": "10",
       "idDestino": 10,
       "nombre": "Canadá entre ciudades y Rocosas",
       "dias": 15,
@@ -2689,7 +2689,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": "11",
       "idDestino": 11,
       "nombre": "Chile entre ciudad y desierto",
       "dias": 7,
@@ -2709,7 +2709,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": "12",
       "idDestino": 12,
       "nombre": "Colombia completa",
       "dias": 10,
@@ -2729,7 +2729,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": "13",
       "idDestino": 13,
       "nombre": "Cuba esencial",
       "dias": 7,
@@ -2749,7 +2749,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": "14",
       "idDestino": 14,
       "nombre": "Curazao caribeño",
       "dias": 6,
@@ -2769,7 +2769,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": "15",
       "idDestino": 15,
       "nombre": "Dominica natural",
       "dias": 6,
@@ -2789,7 +2789,7 @@
       ]
     },
     {
-      "id": 16,
+      "id": "16",
       "idDestino": 16,
       "nombre": "Quito y Ecuador",
       "dias": 5,
@@ -2809,7 +2809,7 @@
       ]
     },
     {
-      "id": 17,
+      "id": "17",
       "idDestino": 17,
       "nombre": "Estados Unidos de costa a costa",
       "dias": 15,
@@ -2829,7 +2829,7 @@
       ]
     },
     {
-      "id": 18,
+      "id": "18",
       "idDestino": 18,
       "nombre": "Granada tropical",
       "dias": 6,
@@ -2849,7 +2849,7 @@
       ]
     },
     {
-      "id": 19,
+      "id": "19",
       "idDestino": 19,
       "nombre": "Guadalupe caribeña",
       "dias": 6,
@@ -2869,7 +2869,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": "20",
       "idDestino": 20,
       "nombre": "Tórtola y el Caribe británico",
       "dias": 6,
@@ -2889,7 +2889,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": "21",
       "idDestino": 21,
       "nombre": "Islas Vírgenes estadounidenses",
       "dias": 8,
@@ -2909,7 +2909,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": "22",
       "idDestino": 22,
       "nombre": "Jamaica tropical",
       "dias": 7,
@@ -2929,7 +2929,7 @@
       ]
     },
     {
-      "id": 23,
+      "id": "23",
       "idDestino": 23,
       "nombre": "Martinica esencial",
       "dias": 6,
@@ -2949,7 +2949,7 @@
       ]
     },
     {
-      "id": 24,
+      "id": "24",
       "idDestino": 24,
       "nombre": "México entre historia y Caribe",
       "dias": 12,
@@ -2969,7 +2969,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": "25",
       "idDestino": 25,
       "nombre": "Perú histórico",
       "dias": 8,
@@ -2989,7 +2989,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": "26",
       "idDestino": 26,
       "nombre": "Puerto Rico esencial",
       "dias": 6,
@@ -3009,7 +3009,7 @@
       ]
     },
     {
-      "id": 27,
+      "id": "27",
       "idDestino": 27,
       "nombre": "República Dominicana tropical",
       "dias": 7,
@@ -3029,7 +3029,7 @@
       ]
     },
     {
-      "id": 28,
+      "id": "28",
       "idDestino": 28,
       "nombre": "Saint Kitts y Nevis",
       "dias": 6,
@@ -3049,7 +3049,7 @@
       ]
     },
     {
-      "id": 29,
+      "id": "29",
       "idDestino": 29,
       "nombre": "Santa Lucía natural",
       "dias": 6,
@@ -3069,7 +3069,7 @@
       ]
     },
     {
-      "id": 30,
+      "id": "30",
       "idDestino": 30,
       "nombre": "Sint Maarten caribeño",
       "dias": 6,
@@ -3089,7 +3089,7 @@
       ]
     },
     {
-      "id": 31,
+      "id": "31",
       "idDestino": 31,
       "nombre": "Tobago tropical",
       "dias": 6,
@@ -3109,7 +3109,7 @@
       ]
     },
     {
-      "id": 32,
+      "id": "32",
       "idDestino": 32,
       "nombre": "Berlín esencial",
       "dias": 5,
@@ -3129,7 +3129,7 @@
       ]
     },
     {
-      "id": 33,
+      "id": "33",
       "idDestino": 33,
       "nombre": "Viena imperial",
       "dias": 5,
@@ -3149,7 +3149,7 @@
       ]
     },
     {
-      "id": 34,
+      "id": "34",
       "idDestino": 34,
       "nombre": "Croacia del Adriático",
       "dias": 7,
@@ -3169,7 +3169,7 @@
       ]
     },
     {
-      "id": 35,
+      "id": "35",
       "idDestino": 35,
       "nombre": "España completa",
       "dias": 14,
@@ -3189,7 +3189,7 @@
       ]
     },
     {
-      "id": 36,
+      "id": "36",
       "idDestino": 36,
       "nombre": "Francia clásica",
       "dias": 12,
@@ -3209,7 +3209,7 @@
       ]
     },
     {
-      "id": 37,
+      "id": "37",
       "idDestino": 37,
       "nombre": "Grecia entre historia e islas",
       "dias": 11,
@@ -3229,7 +3229,7 @@
       ]
     },
     {
-      "id": 38,
+      "id": "38",
       "idDestino": 38,
       "nombre": "Budapest esencial",
       "dias": 5,
@@ -3249,7 +3249,7 @@
       ]
     },
     {
-      "id": 39,
+      "id": "39",
       "idDestino": 39,
       "nombre": "Dublín y cultura irlandesa",
       "dias": 5,
@@ -3269,7 +3269,7 @@
       ]
     },
     {
-      "id": 40,
+      "id": "40",
       "idDestino": 40,
       "nombre": "Islandia natural",
       "dias": 7,
@@ -3289,7 +3289,7 @@
       ]
     },
     {
-      "id": 41,
+      "id": "41",
       "idDestino": 41,
       "nombre": "Italia clásica",
       "dias": 10,
@@ -3309,7 +3309,7 @@
       ]
     },
     {
-      "id": 42,
+      "id": "42",
       "idDestino": 42,
       "nombre": "Malta mediterránea",
       "dias": 6,
@@ -3329,7 +3329,7 @@
       ]
     },
     {
-      "id": 43,
+      "id": "43",
       "idDestino": 43,
       "nombre": "Noruega del norte",
       "dias": 6,
@@ -3349,7 +3349,7 @@
       ]
     },
     {
-      "id": 44,
+      "id": "44",
       "idDestino": 44,
       "nombre": "Ámsterdam esencial",
       "dias": 5,
@@ -3369,7 +3369,7 @@
       ]
     },
     {
-      "id": 45,
+      "id": "45",
       "idDestino": 45,
       "nombre": "Cracovia histórica",
       "dias": 5,
@@ -3389,7 +3389,7 @@
       ]
     },
     {
-      "id": 46,
+      "id": "46",
       "idDestino": 46,
       "nombre": "Portugal completo",
       "dias": 9,
@@ -3409,7 +3409,7 @@
       ]
     },
     {
-      "id": 47,
+      "id": "47",
       "idDestino": 47,
       "nombre": "Gran recorrido británico",
       "dias": 14,
@@ -3429,7 +3429,7 @@
       ]
     },
     {
-      "id": 48,
+      "id": "48",
       "idDestino": 48,
       "nombre": "Praga esencial",
       "dias": 5,
@@ -3449,7 +3449,7 @@
       ]
     },
     {
-      "id": 49,
+      "id": "49",
       "idDestino": 49,
       "nombre": "Bucarest esencial",
       "dias": 5,
@@ -3469,7 +3469,7 @@
       ]
     },
     {
-      "id": 50,
+      "id": "50",
       "idDestino": 50,
       "nombre": "Riad esencial",
       "dias": 5,
@@ -3489,7 +3489,7 @@
       ]
     },
     {
-      "id": 51,
+      "id": "51",
       "idDestino": 51,
       "nombre": "Baréin esencial",
       "dias": 5,
@@ -3509,7 +3509,7 @@
       ]
     },
     {
-      "id": 52,
+      "id": "52",
       "idDestino": 52,
       "nombre": "Templos de Camboya",
       "dias": 6,
@@ -3529,7 +3529,7 @@
       ]
     },
     {
-      "id": 53,
+      "id": "53",
       "idDestino": 53,
       "nombre": "Doha moderna",
       "dias": 5,
@@ -3549,7 +3549,7 @@
       ]
     },
     {
-      "id": 54,
+      "id": "54",
       "idDestino": 54,
       "nombre": "China entre tradición y modernidad",
       "dias": 12,
@@ -3569,7 +3569,7 @@
       ]
     },
     {
-      "id": 55,
+      "id": "55",
       "idDestino": 55,
       "nombre": "Seúl esencial",
       "dias": 6,
@@ -3589,7 +3589,7 @@
       ]
     },
     {
-      "id": 56,
+      "id": "56",
       "idDestino": 56,
       "nombre": "Emiratos completos",
       "dias": 8,
@@ -3609,7 +3609,7 @@
       ]
     },
     {
-      "id": 57,
+      "id": "57",
       "idDestino": 57,
       "nombre": "Filipinas esencial",
       "dias": 8,
@@ -3629,7 +3629,7 @@
       ]
     },
     {
-      "id": 58,
+      "id": "58",
       "idDestino": 58,
       "nombre": "Tiflis y Georgia",
       "dias": 6,
@@ -3649,7 +3649,7 @@
       ]
     },
     {
-      "id": 59,
+      "id": "59",
       "idDestino": 59,
       "nombre": "India entre palacios y ciudades",
       "dias": 13,
@@ -3669,7 +3669,7 @@
       ]
     },
     {
-      "id": 60,
+      "id": "60",
       "idDestino": 60,
       "nombre": "Bali esencial",
       "dias": 8,
@@ -3689,7 +3689,7 @@
       ]
     },
     {
-      "id": 61,
+      "id": "61",
       "idDestino": 61,
       "nombre": "Japón esencial",
       "dias": 12,
@@ -3709,7 +3709,7 @@
       ]
     },
     {
-      "id": 62,
+      "id": "62",
       "idDestino": 62,
       "nombre": "Jordania histórica",
       "dias": 8,
@@ -3729,7 +3729,7 @@
       ]
     },
     {
-      "id": 63,
+      "id": "63",
       "idDestino": 63,
       "nombre": "Kuala Lumpur esencial",
       "dias": 5,
@@ -3749,7 +3749,7 @@
       ]
     },
     {
-      "id": 64,
+      "id": "64",
       "idDestino": 64,
       "nombre": "Maldivas paradisíacas",
       "dias": 7,
@@ -3769,7 +3769,7 @@
       ]
     },
     {
-      "id": 65,
+      "id": "65",
       "idDestino": 65,
       "nombre": "Katmandú y Nepal",
       "dias": 7,
@@ -3789,7 +3789,7 @@
       ]
     },
     {
-      "id": 66,
+      "id": "66",
       "idDestino": 66,
       "nombre": "Omán entre Mascate y Salalah",
       "dias": 8,
@@ -3809,7 +3809,7 @@
       ]
     },
     {
-      "id": 67,
+      "id": "67",
       "idDestino": 67,
       "nombre": "Singapur esencial",
       "dias": 5,
@@ -3829,7 +3829,7 @@
       ]
     },
     {
-      "id": 68,
+      "id": "68",
       "idDestino": 68,
       "nombre": "Sri Lanka completa",
       "dias": 10,
@@ -3849,7 +3849,7 @@
       ]
     },
     {
-      "id": 69,
+      "id": "69",
       "idDestino": 69,
       "nombre": "Tailandia completa",
       "dias": 11,
@@ -3869,7 +3869,7 @@
       ]
     },
     {
-      "id": 70,
+      "id": "70",
       "idDestino": 70,
       "nombre": "Turquía entre Estambul y Capadocia",
       "dias": 8,
@@ -3889,7 +3889,7 @@
       ]
     },
     {
-      "id": 71,
+      "id": "71",
       "idDestino": 71,
       "nombre": "Vietnam de norte a sur",
       "dias": 13,
@@ -3909,7 +3909,7 @@
       ]
     },
     {
-      "id": 72,
+      "id": "72",
       "idDestino": 72,
       "nombre": "Egipto milenario",
       "dias": 10,
@@ -3929,7 +3929,7 @@
       ]
     },
     {
-      "id": 73,
+      "id": "73",
       "idDestino": 73,
       "nombre": "Kenia entre ciudad y costa",
       "dias": 8,
@@ -3949,7 +3949,7 @@
       ]
     },
     {
-      "id": 74,
+      "id": "74",
       "idDestino": 74,
       "nombre": "Marruecos completo",
       "dias": 10,
@@ -3969,7 +3969,7 @@
       ]
     },
     {
-      "id": 75,
+      "id": "75",
       "idDestino": 75,
       "nombre": "Mauricio tropical",
       "dias": 7,
@@ -3989,7 +3989,7 @@
       ]
     },
     {
-      "id": 76,
+      "id": "76",
       "idDestino": 76,
       "nombre": "Ciudad del Cabo esencial",
       "dias": 7,
@@ -4009,7 +4009,7 @@
       ]
     },
     {
-      "id": 77,
+      "id": "77",
       "idDestino": 77,
       "nombre": "Tanzania entre montaña y mar",
       "dias": 10,
@@ -4029,7 +4029,7 @@
       ]
     },
     {
-      "id": 78,
+      "id": "78",
       "idDestino": 78,
       "nombre": "Livingstone y el Zambeze",
       "dias": 5,
@@ -4049,7 +4049,7 @@
       ]
     },
     {
-      "id": 79,
+      "id": "79",
       "idDestino": 79,
       "nombre": "Cataratas Victoria",
       "dias": 5,
@@ -4069,7 +4069,7 @@
       ]
     },
     {
-      "id": 80,
+      "id": "80",
       "idDestino": 80,
       "nombre": "Australia completa",
       "dias": 15,
@@ -4089,7 +4089,7 @@
       ]
     },
     {
-      "id": 81,
+      "id": "81",
       "idDestino": 81,
       "nombre": "Fiyi tropical",
       "dias": 7,
@@ -4109,7 +4109,7 @@
       ]
     },
     {
-      "id": 82,
+      "id": "82",
       "idDestino": 82,
       "nombre": "Islas Cook paradisíacas",
       "dias": 8,
@@ -4129,7 +4129,7 @@
       ]
     },
     {
-      "id": 83,
+      "id": "83",
       "idDestino": 83,
       "nombre": "Nueva Zelanda completa",
       "dias": 13,
@@ -4149,7 +4149,7 @@
       ]
     },
     {
-      "id": 84,
+      "id": "84",
       "idDestino": 84,
       "nombre": "Polinesia Francesa",
       "dias": 9,
@@ -4169,7 +4169,7 @@
       ]
     },
     {
-      "id": 85,
+      "id": "85",
       "idDestino": 85,
       "nombre": "Gran Caimán esencial",
       "dias": 6,
@@ -4189,7 +4189,7 @@
       ]
     },
     {
-      "id": 86,
+      "id": "86",
       "idDestino": 10,
       "nombre": "Canadá del Pacífico",
       "dias": 10,
@@ -4209,7 +4209,7 @@
       ]
     },
     {
-      "id": 87,
+      "id": "87",
       "idDestino": 10,
       "nombre": "Canadá atlántico",
       "dias": 8,
@@ -4229,7 +4229,7 @@
       ]
     },
     {
-      "id": 88,
+      "id": "88",
       "idDestino": 10,
       "nombre": "Canadá central",
       "dias": 8,
@@ -4249,7 +4249,7 @@
       ]
     },
     {
-      "id": 89,
+      "id": "89",
       "idDestino": 10,
       "nombre": "Ontario y Quebec",
       "dias": 11,
@@ -4269,7 +4269,7 @@
       ]
     },
     {
-      "id": 90,
+      "id": "90",
       "idDestino": 17,
       "nombre": "Costa Este de Estados Unidos",
       "dias": 12,
@@ -4289,7 +4289,7 @@
       ]
     },
     {
-      "id": 91,
+      "id": "91",
       "idDestino": 17,
       "nombre": "Nueva Inglaterra y Acadia",
       "dias": 6,
@@ -4309,7 +4309,7 @@
       ]
     },
     {
-      "id": 92,
+      "id": "92",
       "idDestino": 17,
       "nombre": "Florida completa",
       "dias": 11,
@@ -4329,7 +4329,7 @@
       ]
     },
     {
-      "id": 93,
+      "id": "93",
       "idDestino": 17,
       "nombre": "California completa",
       "dias": 11,
@@ -4349,7 +4349,7 @@
       ]
     },
     {
-      "id": 94,
+      "id": "94",
       "idDestino": 17,
       "nombre": "Hawái entre islas",
       "dias": 13,
@@ -4369,7 +4369,7 @@
       ]
     },
     {
-      "id": 95,
+      "id": "95",
       "idDestino": 17,
       "nombre": "Música del sur",
       "dias": 7,
@@ -4389,7 +4389,7 @@
       ]
     },
     {
-      "id": 96,
+      "id": "96",
       "idDestino": 17,
       "nombre": "Montañas y desiertos de Estados Unidos",
       "dias": 12,
@@ -4409,7 +4409,7 @@
       ]
     },
     {
-      "id": 97,
+      "id": "97",
       "idDestino": 17,
       "nombre": "Chicago y Galena",
       "dias": 6,
@@ -4429,7 +4429,7 @@
       ]
     },
     {
-      "id": 98,
+      "id": "98",
       "idDestino": 24,
       "nombre": "Caribe mexicano",
       "dias": 10,
@@ -4449,7 +4449,7 @@
       ]
     },
     {
-      "id": 99,
+      "id": "99",
       "idDestino": 24,
       "nombre": "México del Pacífico",
       "dias": 9,
@@ -4469,7 +4469,7 @@
       ]
     },
     {
-      "id": 100,
+      "id": "100",
       "idDestino": 24,
       "nombre": "Baja California Sur",
       "dias": 6,
@@ -4489,7 +4489,7 @@
       ]
     },
     {
-      "id": 101,
+      "id": "101",
       "idDestino": 35,
       "nombre": "Cataluña y Mediterráneo",
       "dias": 7,
@@ -4509,7 +4509,7 @@
       ]
     },
     {
-      "id": 102,
+      "id": "102",
       "idDestino": 35,
       "nombre": "Andalucía completa",
       "dias": 10,
@@ -4529,7 +4529,7 @@
       ]
     },
     {
-      "id": 103,
+      "id": "103",
       "idDestino": 35,
       "nombre": "Islas Baleares",
       "dias": 10,
@@ -4549,7 +4549,7 @@
       ]
     },
     {
-      "id": 104,
+      "id": "104",
       "idDestino": 35,
       "nombre": "Islas Canarias",
       "dias": 12,
@@ -4569,7 +4569,7 @@
       ]
     },
     {
-      "id": 105,
+      "id": "105",
       "idDestino": 36,
       "nombre": "Francia atlántica y Normandía",
       "dias": 9,
@@ -4589,7 +4589,7 @@
       ]
     },
     {
-      "id": 106,
+      "id": "106",
       "idDestino": 36,
       "nombre": "Francia mediterránea",
       "dias": 7,
@@ -4609,7 +4609,7 @@
       ]
     },
     {
-      "id": 107,
+      "id": "107",
       "idDestino": 36,
       "nombre": "Borgoña y Alpes franceses",
       "dias": 9,
@@ -4629,7 +4629,7 @@
       ]
     },
     {
-      "id": 108,
+      "id": "108",
       "idDestino": 37,
       "nombre": "Creta mediterránea",
       "dias": 7,
@@ -4649,7 +4649,7 @@
       ]
     },
     {
-      "id": 109,
+      "id": "109",
       "idDestino": 41,
       "nombre": "Sur de Italia y Costa Amalfitana",
       "dias": 10,
@@ -4669,7 +4669,7 @@
       ]
     },
     {
-      "id": 110,
+      "id": "110",
       "idDestino": 41,
       "nombre": "Sicilia completa",
       "dias": 9,
@@ -4689,7 +4689,7 @@
       ]
     },
     {
-      "id": 111,
+      "id": "111",
       "idDestino": 47,
       "nombre": "Sur de Inglaterra",
       "dias": 9,
@@ -4709,7 +4709,7 @@
       ]
     },
     {
-      "id": 112,
+      "id": "112",
       "idDestino": 47,
       "nombre": "Norte de Inglaterra y Lake District",
       "dias": 10,
@@ -4729,7 +4729,7 @@
       ]
     },
     {
-      "id": 113,
+      "id": "113",
       "idDestino": 47,
       "nombre": "Escocia completa",
       "dias": 10,
@@ -4749,7 +4749,7 @@
       ]
     },
     {
-      "id": 114,
+      "id": "114",
       "idDestino": 47,
       "nombre": "Gales e Irlanda del Norte",
       "dias": 7,
@@ -4769,7 +4769,7 @@
       ]
     },
     {
-      "id": 115,
+      "id": "115",
       "idDestino": 47,
       "nombre": "Escapada a Jersey",
       "dias": 5,
@@ -4789,7 +4789,7 @@
       ]
     },
     {
-      "id": 116,
+      "id": "116",
       "idDestino": 61,
       "nombre": "Japón tradicional y Alpes",
       "dias": 9,
@@ -4809,7 +4809,7 @@
       ]
     },
     {
-      "id": 117,
+      "id": "117",
       "idDestino": 61,
       "nombre": "Tokio y gastronomía",
       "dias": 6,
@@ -4829,7 +4829,7 @@
       ]
     },
     {
-      "id": 118,
+      "id": "118",
       "idDestino": 61,
       "nombre": "Okinawa tropical",
       "dias": 9,
@@ -4848,5 +4848,6 @@
         "Excursiones indicadas"
       ]
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams, Link } from "react-router-dom";
 import { obtenerItinerarios } from "@api/itinerariosApi";
-import destinos from "@/data/destinos.js";
+import { obtenerDestinos } from "@api/destinosApi";
 
 function Itinerarios() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -12,6 +12,7 @@ function Itinerarios() {
   const [duracion, setDuracion] = useState("Todos");
   const [orden, setOrden] = useState("az");
   const [itinerarios, setItinerarios] = useState([]);
+  const [destinos, setDestinos] = useState([]);
   const [cargando, setCargando] = useState(true);
   const [error, setError] = useState("");
   useEffect(() => {
@@ -22,12 +23,14 @@ function Itinerarios() {
         setCargando(true);
         setError("");
 
-        const datos = await obtenerItinerarios({
-          signal: controlador.signal,
-        });
+        const [datosItinerarios, datosDestinos] = await Promise.all([
+          obtenerItinerarios({ signal: controlador.signal }),
+          obtenerDestinos({ signal: controlador.signal }),
+        ]);
 
         if (!controlador.signal.aborted) {
-          setItinerarios(datos);
+          setItinerarios(datosItinerarios);
+          setDestinos(datosDestinos);
         }
       } catch (error) {
         if (!controlador.signal.aborted) {
@@ -47,12 +50,16 @@ function Itinerarios() {
 
   const destinosConItinerarios = destinos
     .filter((destino) =>
-      itinerarios.some((itinerario) => String(itinerario.idDestino) === String(destino.id)),
+      itinerarios.some(
+        (itinerario) => String(itinerario.idDestino) === String(destino.id),
+      ),
     )
     .sort((a, b) => a.nombre.localeCompare(b.nombre, "es"));
 
   const obtenerNombreDestino = (idDestino) => {
-    const destino = destinos.find((destino) => String(destino.id) === String(idDestino));
+    const destino = destinos.find(
+      (destino) => String(destino.id) === String(idDestino),
+    );
     return destino ? destino.nombre : "Destino desconocido";
   };
 
