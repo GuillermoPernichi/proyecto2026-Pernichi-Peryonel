@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import TarjetaDestino from "@components/TarjetaDestino.jsx";
-import imagenArgentina from "@assets/argentina.jpg";
+import imagenArgentina from "@assets/argentina-2.jpg";
 
 function Home() {
   return (

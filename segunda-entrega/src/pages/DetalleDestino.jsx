@@ -1,12 +1,13 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { obtenerDestinos } from "@api/destinosApi";
-import itinerarios from "@/data/itinerarios.js";
+import { obtenerItinerarios } from "@api/itinerariosApi";
 
 function DetalleDestino() {
   const { id } = useParams();
 
   const [destinos, setDestinos] = useState([]);
+  const [itinerarios, setItinerarios] = useState([]);
   const [cargando, setCargando] = useState(true);
   const [error, setError] = useState("");
 
@@ -19,12 +20,14 @@ function DetalleDestino() {
         setCargando(true);
         setError("");
 
-        const datos = await obtenerDestinos({
-          signal: controlador.signal,
-        });
+        const [datosDestinos, datosItinerarios] = await Promise.all([
+          obtenerDestinos({ signal: controlador.signal }),
+          obtenerItinerarios({ signal: controlador.signal }),
+        ]);
 
         if (!controlador.signal.aborted) {
-          setDestinos(datos);
+          setDestinos(datosDestinos);
+          setItinerarios(datosItinerarios);
         }
       } catch (error) {
         if (!controlador.signal.aborted) {
