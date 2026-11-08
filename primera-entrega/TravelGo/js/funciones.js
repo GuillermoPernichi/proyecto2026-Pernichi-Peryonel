@@ -5682,7 +5682,9 @@ const formatearPrecio = (precio) => {
         currency: "USD"
     }).format(precio);
 }
-
+document.getElementById("viajeros")?.addEventListener("input", () => {
+    document.getElementById("resultadoCotizacion").innerHTML = "";
+});
 /**
  * Calcula y muestra la cotización del viaje según el itinerario,
  * la cantidad de pasajeros y los servicios adicionales seleccionados.
