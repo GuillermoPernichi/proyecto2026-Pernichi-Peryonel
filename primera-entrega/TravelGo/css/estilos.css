@@ -1,3 +1,12 @@
+:root {
+    --color-primario: #1d5c63;
+    --color-secundario: #222222;
+    --color-fondo: #e8f1f2;
+    --color-texto: #555555;
+    --color-blanco: #ffffff;
+    --color-destacado: #1f6f78;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,13 +14,13 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-    background-color: #ffffff;
-    color: #222222;
+    background-color: var(--color-blanco);
+    color: var(--color-secundario);
 }
 
 header {
-    background-color: #e8f1f2;
-    color: #222222;
+    background-color: var(--color-fondo);
+    color: var(--color-secundario);
     padding: 20px;
     text-align: left;
     border-bottom: 1px solid #dddddd;
@@ -26,7 +35,7 @@ nav {
 }
 
 nav a {
-    color: #222222;
+    color: var(--color-secundario);
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
@@ -38,13 +47,11 @@ main {
 }
 
 section {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
-
 header h1 {
-    color: #1d5c63;
+    color: var(--color-primario);
     font-size: 32px;
 }
 
@@ -55,11 +62,11 @@ header>p {
 
 nav a:hover {
     text-decoration: underline;
-    color: #1d5c63;
+    color: var(--color-primario);
 }
 
 .hero {
-    background-color: #e8f1f2;
+    background-color: var(--color-fondo);
     text-align: center;
     padding: 80px 20px;
     border-radius: 10px;
@@ -67,19 +74,18 @@ nav a:hover {
 
 .hero h2 {
     font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
 }
 
 .hero p {
     font-size: 18px;
-    color: #555555;
+    color: var(--color-texto);
     margin-bottom: 30px;
 }
 
 .hero a {
-    background-color: #1d5c63;
-    color: #ffffff;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 5px;
@@ -89,10 +95,6 @@ nav a:hover {
     background-color: #153f44;
 }
 
-/* =========================
-   DESTINOS
-   ========================= */
-
 .filtros-destinos {
     max-width: 1200px;
     margin: 30px auto;
@@ -101,9 +103,6 @@ nav a:hover {
     border-radius: 12px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
-
-
-/* Buscador */
 
 .buscador-destinos {
     margin-bottom: 20px;
@@ -123,9 +122,6 @@ nav a:hover {
     font-size: 16px;
 }
 
-
-/* Botones de continentes */
-
 .continentes-destinos {
     display: flex;
     gap: 10px;
@@ -135,21 +131,18 @@ nav a:hover {
 
 .continentes-destinos button {
     padding: 10px 18px;
-    border: 1px solid #1f6f78;
+    border: 1px solid var(--color-destacado);
     border-radius: 20px;
     background-color: white;
-    color: #1f6f78;
+    color: var(--color-destacado);
     cursor: pointer;
     font-size: 15px;
 }
 
 .continentes-destinos button:hover {
-    background-color: #1f6f78;
+    background-color: var(--color-destacado);
     color: white;
 }
-
-
-/* Orden */
 
 .orden-destinos {
     display: flex;
@@ -168,9 +161,6 @@ nav a:hover {
     border-radius: 6px;
 }
 
-
-/* Contenedor de tarjetas */
-
 .contenedor-destinos {
     max-width: 1200px;
     margin: 30px auto;
@@ -178,9 +168,6 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 25px;
 }
-
-
-/* Tarjeta */
 
 .tarjeta-destino {
     width: 31%;
@@ -194,17 +181,11 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
-
-/* Imagen */
-
 .tarjeta-destino img {
     width: 100%;
     height: 210px;
     object-fit: cover;
 }
-
-
-/* Contenido */
 
 .contenido-destino {
     padding: 20px;
@@ -212,7 +193,7 @@ nav a:hover {
 
 .continente-destino {
     margin: 0 0 6px 0;
-    color: #1f6f78;
+    color: var(--color-destacado);
     font-size: 14px;
     font-weight: bold;
 }
@@ -230,14 +211,12 @@ nav a:hover {
     margin: 50px auto;
 }
 
-/* Botón de cada destino */
-
 .contenido-destino button {
     margin-top: 10px;
     padding: 10px 18px;
     border: none;
     border-radius: 6px;
-    background-color: #1f6f78;
+    background-color: var(--color-destacado);
     color: white;
     cursor: pointer;
 }
@@ -247,34 +226,27 @@ nav a:hover {
 }
 
 .continentes-destinos button.continente-activo {
-    background-color: #1f6f78;
+    background-color: var(--color-destacado);
     color: white;
 }
 
 .destinos-destacados .tarjeta-destino h3 {
     font-size: 22px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 15px;
+    margin: 25px 25px 15px 25px;
 }
 
 .destinos-destacados .tarjeta-destino p {
-    color: #555555;
+    color: var(--color-texto);
     line-height: 1.5;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 20px;
+    margin: 0 25px 20px 25px;
 }
 
 .destinos-destacados .tarjeta-destino a {
-    color: #1d5c63;
+    color: var(--color-primario);
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
+    margin: 0 25px 25px 25px;
 }
 
 .destinos-destacados .tarjeta-destino a:hover {
@@ -282,23 +254,23 @@ nav a:hover {
 }
 
 section>h2 {
-    color: #222222;
+    color: var(--color-secundario);
     font-size: 30px;
 }
 
 .tarjeta-itinerario h3 {
-    color: #1d5c63;
+    color: var(--color-primario);
     font-size: 24px;
     margin-top: 0;
 }
 
 .tarjeta-itinerario p {
-    color: #555555;
+    color: var(--color-texto);
     line-height: 1.5;
 }
 
 .tarjeta-itinerario a {
-    color: #1d5c63;
+    color: var(--color-primario);
     font-weight: bold;
     text-decoration: none;
 }
@@ -308,21 +280,21 @@ section>h2 {
 }
 
 .seccion-cotizacion {
-    background-color: #e8f1f2;
+    background-color: var(--color-fondo);
     text-align: center;
     padding: 50px 20px;
     border-radius: 10px;
 }
 
 .seccion-cotizacion p {
-    color: #555555;
+    color: var(--color-texto);
     font-size: 18px;
     margin-bottom: 30px;
 }
 
 .seccion-cotizacion a {
-    background-color: #1d5c63;
-    color: #ffffff;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 5px;
@@ -335,8 +307,8 @@ section>h2 {
 footer {
     margin-top: 60px;
     padding: 30px;
-    background-color: #1d5c63;
-    color: #ffffff;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
     text-align: center;
 }
 
@@ -350,19 +322,19 @@ footer p {
 }
 
 .encabezado-pagina h2 {
-    color: #1d5c63;
+    color: var(--color-primario);
     font-size: 36px;
     margin-bottom: 10px;
 }
 
 .encabezado-pagina p {
-    color: #555555;
+    color: var(--color-texto);
     font-size: 18px;
 }
 
 .tarjeta-itinerario ul {
     padding-left: 20px;
-    color: #555555;
+    color: var(--color-texto);
     line-height: 1.8;
 }
 
@@ -386,13 +358,14 @@ footer p {
 .seccion-formulario select,
 .seccion-formulario textarea {
     padding: 10px;
+    resize: none;
 }
 
 .seccion-formulario button {
     margin-top: 20px;
     padding: 12px;
-    background-color: #1d5c63;
-    color: #ffffff;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -405,7 +378,7 @@ footer p {
 #resultadoCotizacion {
     margin-top: 30px;
     padding: 20px;
-    background-color: #e8f1f2;
+    background-color: var(--color-fondo);
     border-radius: 10px;
 }
 
@@ -419,11 +392,11 @@ footer p {
 }
 
 .seccion-nosotros h2 {
-    color: #1d5c63;
+    color: var(--color-primario);
 }
 
 .seccion-nosotros p {
-    color: #555555;
+    color: var(--color-texto);
     line-height: 1.7;
 }
 
@@ -441,18 +414,18 @@ footer p {
 }
 
 .tarjeta-integrante h3 {
-    color: #1d5c63;
+    color: var(--color-primario);
     margin-top: 0;
 }
 
 .tarjeta-integrante p {
-    color: #555555;
+    color: var(--color-texto);
 }
 
 #resultadoContacto {
     margin-top: 30px;
     padding: 20px;
-    background-color: #e8f1f2;
+    background-color: var(--color-fondo);
     border-radius: 10px;
 }
 
@@ -460,16 +433,10 @@ footer p {
     display: none;
 }
 
-/* =========================
-   DETALLE DE DESTINO
-   ========================= */
-
 .detalle-destino {
     max-width: 1200px;
     margin: 40px auto;
 }
-
-/* Encabezado principal */
 
 .encabezado-detalle {
     display: flex;
@@ -492,16 +459,13 @@ footer p {
 }
 
 .informacion-detalle h1 {
-    margin-top: 5px;
-    margin-bottom: 15px;
+    margin: 5px 0 15px 0;
     font-size: 38px;
 }
 
 .informacion-detalle>p {
     line-height: 1.6;
 }
-
-/* Datos generales */
 
 .datos-destino {
     margin-top: 25px;
@@ -513,8 +477,6 @@ footer p {
 .datos-destino p {
     margin: 8px 0;
 }
-
-/* Lugares */
 
 .lugares-destino {
     margin-top: 40px;
@@ -532,8 +494,8 @@ footer p {
 .titulo-zona {
     margin-bottom: 20px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #1f6f78;
-    color: #1f6f78;
+    border-bottom: 2px solid var(--color-destacado);
+    color: var(--color-destacado);
     font-size: 22px;
 }
 
@@ -567,8 +529,7 @@ footer p {
 
 .contenido-lugar h3,
 .contenido-lugar h4 {
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     font-size: 20px;
 }
 
@@ -577,13 +538,11 @@ footer p {
     line-height: 1.5;
 }
 
-/* Volver */
-
 .volver-destinos {
     display: inline-block;
     margin-top: 20px;
     padding: 11px 20px;
-    background-color: #1f6f78;
+    background-color: var(--color-destacado);
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -592,10 +551,6 @@ footer p {
 .volver-destinos:hover {
     background-color: #164f56;
 }
-
-/* =========================
-   ITINERARIOS
-   ========================= */
 
 .filtros-itinerarios {
     max-width: 1200px;
@@ -648,9 +603,6 @@ footer p {
     background-color: white;
 }
 
-
-/* Contenedor de tarjetas */
-
 .contenedor-itinerarios {
     max-width: 1200px;
     margin: 30px auto;
@@ -659,9 +611,6 @@ footer p {
     flex-wrap: wrap;
     gap: 25px;
 }
-
-
-/* Tarjeta */
 
 .tarjeta-itinerario {
     width: 31%;
@@ -677,23 +626,20 @@ footer p {
     transform: translateY(-5px);
 }
 
-
-/* Parte superior */
-
 .encabezado-itinerario {
     padding: 20px;
-    background-color: #1f6f78;
+    background-color: var(--color-destacado);
     color: white;
 }
 
-.destino-itinerario {
+.tarjeta-itinerario .destino-itinerario {
     margin: 0 0 6px 0;
     font-size: 14px;
     font-weight: bold;
     color: white;
 }
 
-.duracion-itinerario {
+.tarjeta-itinerario .duracion-itinerario {
     margin: 0;
     font-weight: bold;
     color: white;
@@ -702,9 +648,6 @@ footer p {
 .encabezado-itinerario h2 {
     margin: 0 0 10px 0;
 }
-
-
-/* Contenido */
 
 .contenido-itinerario {
     padding: 20px;
@@ -715,28 +658,21 @@ footer p {
 }
 
 .contenido-itinerario h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin: 20px 0 10px 0;
 }
 
 .contenido-itinerario li {
     margin-bottom: 7px;
 }
 
-
-/* Precio */
-
 .precio-itinerario {
     margin-top: 20px;
     padding-top: 15px;
     border-top: 1px solid #dddddd;
-    color: #1f6f78;
+    color: var(--color-destacado);
     font-size: 18px;
     font-weight: bold;
 }
-
-
-/* Sin resultados */
 
 .sin-resultados {
     width: 100%;
@@ -793,32 +729,23 @@ footer p {
     cursor: pointer;
 }
 
-/* =========================
-   COTIZACIÓN
-   ========================= */
-
 .resumen-itinerario-cotizacion {
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin: 15px 0 20px 0;
     padding: 20px;
     background-color: #f5f5f5;
-    border-left: 4px solid #1f6f78;
+    border-left: 4px solid var(--color-destacado);
     border-radius: 8px;
 }
 
 .resumen-itinerario-cotizacion h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    color: #1f6f78;
+    margin: 0 0 15px 0;
+    color: var(--color-destacado);
 }
 
 .resumen-itinerario-cotizacion p {
     margin: 8px 0;
     line-height: 1.5;
 }
-
-
-/* Servicios adicionales */
 
 .extras-cotizacion {
     margin-top: 20px;
@@ -828,8 +755,7 @@ footer p {
 }
 
 .extras-cotizacion h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
 }
 
 .extras-cotizacion label {
@@ -844,12 +770,9 @@ footer p {
     margin-right: 8px;
 }
 
-
-/* Resultado */
-
 .resumen-cotizacion h2 {
     margin-top: 0;
-    color: #1f6f78;
+    color: var(--color-destacado);
 }
 
 .resumen-cotizacion p {
@@ -868,6 +791,6 @@ footer p {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid #cccccc;
-    color: #1f6f78;
+    color: var(--color-destacado);
     font-size: 24px;
 }
