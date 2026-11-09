@@ -2,6 +2,11 @@
 
 TravelGo es una aplicación web de viajes desarrollada con React. Permite explorar destinos turísticos, consultar itinerarios, calcular presupuestos personalizados y administrar destinos mediante una API REST simulada.
 
+## Autores
+
+- Guillermo Pernichi
+- Joaquín Peyronel
+
 ## Tecnologías utilizadas
 
 - React
